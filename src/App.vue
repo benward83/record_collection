@@ -6,7 +6,7 @@
 </template>
 
 <script>
-
+import '@/assets/style.css';
 import Header from '@/components/Header.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 
