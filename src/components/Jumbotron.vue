@@ -1,27 +1,32 @@
 <template>
-  <div class="jumbo">
-    <div>
-      <b-jumbotron header="What do you want to hear?" lead="Find the perfect song for your mood..">
+  <div class="jumbotron">
+    <b-jumbotron>
+        <template #header>Dope Records</template>
+
+        <template #lead>
+          Welcome to my record collection
+        </template>
+
+        <hr class="my-4">
+
+        <p>
+          Feel free to browse around and choose some tunes that fit your mood!
+        </p>
       </b-jumbotron>
-    </div>
   </div>
 </template>
 
 <script>
 export default {
+
 };
 </script>
 
 <style scoped>
-.jumbo {
-  background-image: url('../assets/images/record_player.jpg');
-  background-position: cover;
-  min-width: 585px;
-  background-size: 100%;
-  margin: 10px auto;
+  .jumbotron {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin: 10px 10px 10px 10px;
-
-}
+  }
 </style>

@@ -1,26 +1,29 @@
 <template>
   <div id="app">
-    <Header />
+    <Navbar />
     <Jumbotron />
+    <Search />
   </div>
 </template>
 
 <script>
-import '@/assets/style.css';
-import Header from '@/components/Header.vue';
+
+import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
+import Search from '@/components/Search.vue';
 
 export default {
   name: 'App',
   components: {
-    Header,
+    Navbar,
     Jumbotron,
+    Search,
   },
 };
 </script>
 
 <style>
 #app {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 </style>
