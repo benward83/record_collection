@@ -1,6 +1,10 @@
 <template>
   <div class="search">
-    <b-form-group label-cols="4" label-cols-lg="2" label="Search" label-for="input-default">
+    <b-form-group
+      label-cols="4"
+      label-cols-lg="2"
+      label-for="input-default">
+      <p>What are you looking for?</p>
       <b-form-input id="input-default"></b-form-input>
     </b-form-group>
   </div>
@@ -19,4 +23,13 @@ export default {
   align-items: center;
   justify-content: center;
 }
+
+.search {
+max-width: 1000px;
+display: block;
+margin: auto;
+width: 25%;
+border-color: #1d1d1d;
+}
+
 </style>
