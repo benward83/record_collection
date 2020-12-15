@@ -1,5 +1,5 @@
 <template>
-  <div class="playing-now">
+  <div class="genres container">
 
   </div>
 </template>
@@ -11,5 +11,8 @@ export default {
 </script>
 
 <style>
+.container {
+  display: flexbox;
+}
 
 </style>
