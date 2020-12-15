@@ -6,9 +6,9 @@
     <Jumbotron />
     <Search />
     <br>
+    <br>
     <Genres />>
     <br>
-    <Carousel />
     <br>
     <PlayingNow />
   </div>
@@ -21,7 +21,6 @@ import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
 import PlayingNow from '@/components/PlayingNow.vue';
 import Genres from '@/components/Genres.vue';
-import Carousel from '@/components/Carousel.vue';
 
 export default {
   name: 'App',
@@ -31,7 +30,7 @@ export default {
     Search,
     PlayingNow,
     Genres,
-    Carousel,
+
   },
 };
 </script>
