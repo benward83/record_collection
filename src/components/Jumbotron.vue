@@ -1,6 +1,6 @@
 <template>
   <div class="jumbotron">
-    <b-jumbotron>
+    <b-jumbotron class="background-image">
         <template #header>Dope Records</template>
 
         <template #lead>
@@ -28,5 +28,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  }
+
+  .background-image {
+  background-image: url ('../assets/images/Crate.jpg');
+  background-size: cover;
   }
 </style>
