@@ -2,7 +2,6 @@
   <div id="app">
     <Navbar />
     <br>
-    <br>
     <Jumbotron />
     <Search />
     <br>
@@ -37,6 +36,7 @@ export default {
 
 <style>
 #app {
-  margin-top: 10px;
+  background-color: whitesmoke;
+  margin-top: 5px;
 }
 </style>
