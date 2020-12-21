@@ -1,16 +1,15 @@
 <template>
-  <div class="jumbotron background-image">
-    <b-jumbotron class="text">
-        <template #header>
-         Strictly Vinyl
-          </template>
-        <template #lead >
-         Welcome to my record collection
+  <div class="jumbotron">
+    <b-jumbotron class="background-image">
+        <template #header>Dope Records</template>
+
+        <template #lead>
+          Welcome to my record collection
         </template>
 
         <hr class="my-4">
 
-        <p class="text">
+        <p>
           Feel free to browse around and choose some tunes that fit your mood!
         </p>
       </b-jumbotron>
@@ -29,21 +28,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  font-family: 'Ubuntu', sans-serif;
-  border-radius: 5px 5px 5px 5px
   }
 
   .background-image {
-  background-image: url('../assets/images/Crates.jpg');
-  background-size: 100%;
-  background-position: 10%;
+  background-image: url ('../assets/images/Crate.jpg');
+  background-size: cover;
   }
-
-  .text {
-    color: #DCDCDC;
-    font-family: 'Ubuntu', sans-serif;
-  }
-
 </style>

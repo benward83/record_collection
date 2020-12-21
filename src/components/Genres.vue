@@ -106,114 +106,6 @@
         </div>
     </div>
   </div>
-  <br>
-  <br>
-  <div class="row">
-    <div class="col order-last">
-       <div class="row align-items-center content">
-         <p>Jazz</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Grover.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Coltrane.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Miles.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Nina.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-    </div>
-    <div class="col">
-       <div class="row align-items-center content">
-         <p>World</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Mercedes_Sosa.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Pradera.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Elis_Regina.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Buena_vista.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-    </div>
-    <div class="col order-first">
-       <div class="row align-items-center content">
-         <p>Dance</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Aphex.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Stanton.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Plump.jpg"
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Leftfield.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-    </div>
-  </div>
 </div>
 </template>
 
@@ -223,7 +115,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .container-fluid {
   max-width: 300px;
 }
@@ -231,5 +123,4 @@ export default {
 .img-fluid {
   border-block-color: black;
 }
-
 </style>
