@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron">
-    <b-jumbotron class="background-image">
-        <template #header>Dope Records</template>
+    <b-jumbotron class="text">
+        <template #header>Digging in the crates...</template>
 
         <template #lead>
           Welcome to my record collection
@@ -28,10 +28,16 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url('../assets/images/Crates.jpg');
+  background-size: 100%;
+  background-position: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px 5px 5px 5px;
   }
 
-  .background-image {
-  background-image: url ('../assets/images/Crate.jpg');
-  background-size: cover;
+  .text {
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
   }
 </style>

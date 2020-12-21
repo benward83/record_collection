@@ -37,6 +37,7 @@ export default {
 
 <style>
 #app {
+  background-color: whitesmoke;
   margin-top: 10px;
 }
 </style>
