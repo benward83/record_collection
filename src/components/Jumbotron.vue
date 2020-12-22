@@ -29,8 +29,7 @@ export default {
   align-items: center;
   justify-content: center;
   background-image: url('../assets/images/Crates.jpg');
-  background-size: 100%;
-  background-position: 20%;
+  background-size: 100% 100%;
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 5px 5px 5px 5px;

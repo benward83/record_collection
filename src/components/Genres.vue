@@ -2,39 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col order-last">
-       <div class="row align-items-center content">
-         <p>Rock</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/American-Beauty.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Beatles.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Desire.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Sticky-Fingers.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
+       <Rock />
     </div>
     <div class="col">
        <div class="row align-items-center content">
@@ -72,38 +40,7 @@
         </div>
     </div>
     <div class="col order-first">
-       <div class="row align-items-center content">
-         <p>Jazz</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Miles.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Nina.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Grover.jpg"
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Dexter.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
+       <Jazz />
     </div>
   </div>
   <div class="row">
@@ -143,39 +80,7 @@
         </div>
     </div>
     <div class="col">
-       <div class="row align-items-center content">
-         <p>Dance</p>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Aphex.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Plump.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
-        <div class="row align-items-center content">
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Massive.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-          <div class="col-md-6">
-            <img
-              src="../assets/images/Leftfield.jpg"
-              alt=""
-              class="img-fluid"
-            >
-          </div>
-        </div>
+      <Dance />
     </div>
     <br>
     <br>
@@ -218,7 +123,18 @@
 </template>
 
 <script>
+
+import Jazz from '@/components/Jazz.vue';
+import Dance from '@/components/Dance.vue';
+import Rock from '@/components/Rock.vue';
+
 export default {
+  name: 'genres',
+  components: {
+    Jazz,
+    Dance,
+    Rock,
+  },
 
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <b-navbar variant="dark" type="light" class="bg-dark navbar-dark">
-      <b-navbar-brand tag="h1" class="mb-0">Mr Ben's Records</b-navbar-brand>
+      <b-navbar-brand href="/" tag="h1" class="mb-0">Mr Ben's Records</b-navbar-brand>
 
       <b-navbar-toggle target="navbar-toggle-collapse">
       <template #default="{ expanded }">

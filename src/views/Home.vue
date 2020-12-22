@@ -7,7 +7,7 @@
     <Search />
     <br>
     <br>
-    <Genres />>
+    <Genres />
     <br>
     <br>
     <PlayingNow />
