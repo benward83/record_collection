@@ -5,6 +5,9 @@
     <br>
     <Jumbotron />
     <Search />
+    <br>
+    <br>
+    <Single7 />
   </div>
 </template>
 
@@ -13,6 +16,7 @@
 import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
+import Single7 from '@/components/Single7.vue';
 
 export default {
   name: '7-inch',
@@ -20,6 +24,7 @@ export default {
     Navbar,
     Jumbotron,
     Search,
+    Single7,
   },
 
 };

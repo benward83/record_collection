@@ -38,5 +38,6 @@ export default {
   .text {
     font-family: 'Ubuntu', sans-serif;
     color: whitesmoke;
+    text-decoration-color: black;
   }
 </style>
