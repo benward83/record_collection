@@ -12,9 +12,13 @@
 
     <b-collapse id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#">12" singles</b-nav-item>
-        <b-nav-item href="#">7" singles</b-nav-item>
-        <b-nav-item href="#">Beats</b-nav-item>
+
+          <b-nav-item href="/12inch">12" singles</b-nav-item>
+
+          <b-nav-item href="/7inch">7" singles</b-nav-item>
+
+          <b-nav-item href="/beats">Beats</b-nav-item>
+
       </b-navbar-nav>
     </b-collapse>
 
