@@ -1,7 +1,7 @@
 <template>
   <div id="single12">
     <div>
-      <b-card-group>
+      <b-card-group class="card-body">
         <b-card
           border-variant="dark"
           class="card-left text-center overflow-hidden"
@@ -51,7 +51,7 @@
   </div>
     <br>
   <div>
-    <b-card-group>
+    <b-card-group >
       <b-card
         border-variant="dark"
         class="card-left text-center overflow-hidden"
@@ -232,7 +232,7 @@ export default {
   margin-left: 15px;
 }
 
-.card-body {
+/* .card-body {
   background-color: blue;
-}
+} */
 </style>
