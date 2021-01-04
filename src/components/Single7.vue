@@ -1,209 +1,131 @@
 <template>
-  <div id="single7">
-    <div>
-      <b-card-group>
-        <b-card
-          border-variant="dark"
-          class=" card-left text-center overflow-hidden"
-          no-body
-          style="max-width: 540px;">
-        <b-row no-gutters>
-          <b-col md="6">
+  <b-container id="single7">
+      <b-row>
+        <b-col>
+          <b-card title="William Bell" sub-title="I forgot to be your lover">
             <b-card-img
-              :src='require("../assets/images/single7/YourLover.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="William Bell - I Forgot To Be Your Lover">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/YourLover.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Geaorge McCrae" sub-title="Rock your baby">
             <b-card-img
-              :src='require("../assets/images/single7/RockYourBaby.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="George McCrae - Rock Your Baby">
-              <b-card-text class="card-text">
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-  </div>
-    <br>
-  <div>
-    <b-card-group>
-      <b-card
-        border-variant="dark"
-        class=" card-left text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/RockYourBaby.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="The Fatback Band" sub-title="Double Dutch">
             <b-card-img
-              :src='require("../assets/images/single7/DoubleDutch.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="The Fatback Band - Double Dutch">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-    </b-card>
-    <br>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/DoubleDutch.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+      <br>
+      <b-row>
+        <b-col>
+          <b-card title="Gloria Jones" sub-title="Tainted Love">
             <b-card-img
-              :src='require("../assets/images/single7/TaintedLove.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Gloria Jones - Tainted Love">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-    </div>
-    <br>
-    <div>
-      <b-card-group>
-        <b-card
-          border-variant="dark"
-          class=" card-left text-center overflow-hidden"
-          no-body
-          style="max-width: 540px;">
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/TaintedLove.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Major Harris" sub-title="My Way">
             <b-card-img
-              :src='require("../assets/images/single7/Major.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Major Harris - My Way">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/Major.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="The Whispers" sub-title="This kind of lovin'">
             <b-card-img
-              :src='require("../assets/images/single7/Lovin.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="The Whispers - This kind of lovin'">
-              <b-card-text class="card-text">
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-  </div>
-    <br>
-  <div>
-    <b-card-group>
-      <b-card
-        border-variant="dark"
-        class=" card-left text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/Lovin.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+      <br>
+      <b-row>
+        <b-col>
+          <b-card title="Archie Bell & The Drells" sub-title="Tighten up">
             <b-card-img
-              :src='require("../assets/images/single7/Tighten.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Archie Bell & The Drells - Tighten up">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-    </b-card>
-    <br>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single7/Tighten.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="The Dells" sub-title="">
             <b-card-img
-              :src='require("../assets/images/single7/Dells.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="The Dells">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-    </div>
-  </div>
+                :src='require("../assets/images/single7/Dells.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Stampeders" sub-title="Summer in the city">
+            <b-card-img
+                :src='require("../assets/images/single7/Summer.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -213,11 +135,6 @@ export default {
 </script>
 
 <style scoped>
-
-#single7 {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 .overflow-hidden {
   background-color: whitesmoke;

@@ -1,209 +1,131 @@
 <template>
-  <div id="single12">
-    <div>
-      <b-card-group class="card-body">
-        <b-card
-          border-variant="dark"
-          class="card-left text-center overflow-hidden"
-          no-body
-          style="max-width: 540px;">
-        <b-row no-gutters>
-          <b-col md="6">
+  <b-container id="single12">
+      <b-row>
+        <b-col>
+          <b-card title="The Bad Seed" sub-title="The Kids">
             <b-card-img
-              :src='require("../assets/images/single12/TheKids.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="The Bad Seed - The Kids">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/TheKids.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Gangstar" sub-title="Full Clip">
             <b-card-img
-              :src='require("../assets/images/single12/FullClip.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Gangstar - Full Clip">
-              <b-card-text class="card-text">
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-  </div>
-    <br>
-  <div>
-    <b-card-group >
-      <b-card
-        border-variant="dark"
-        class="card-left text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/FullClip.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="A Tribe Called Quest" sub-title="Can I kick it?">
             <b-card-img
-              :src='require("../assets/images/single12/Kick-It.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="A Tribe Called Quest - Can I Kick it?">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-    </b-card>
-    <br>
-    <b-card
-      border-variant="dark"
-      class="card-right text-center overflow-hidden"
-      no-body
-      style="max-width: 540px;"
-    >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/Kick-It.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+      <br>
+      <b-row>
+        <b-col>
+          <b-card title="DJ Vadim" sub-title="The Terrorist">
             <b-card-img
-              :src='require("../assets/images/single12/Terrorist.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Dj Vadim - The Terrorist">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-    </div>
-    <br>
-    <div>
-      <b-card-group>
-        <b-card
-          border-variant="dark"
-          class="card-left text-center overflow-hidden"
-          no-body
-          style="max-width: 540px;">
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/Terrorist.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Snoop Dogg" sub-title="Drop it like it's hot">
             <b-card-img
-              :src='require("../assets/images/single12/DropIt.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Snoop Dogg - Drop it like it's hot">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-      <b-card
-        border-variant="dark"
-        class="card-right text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/DropIt.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Rae & Christian" sub-title="Ain't nothing like Hip Hop music">
             <b-card-img
-              :src='require("../assets/images/single12/AintNothing.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Rae & Christian - Ain't nothing like Hip Hop music">
-              <b-card-text class="card-text">
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-  </div>
-    <br>
-  <div>
-    <b-card-group class="card-body">
-      <b-card
-        border-variant="dark"
-        class="card-left text-center overflow-hidden"
-        no-body
-        style="max-width: 540px;"
-      >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/AintNothing.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+      <br>
+      <b-row>
+        <b-col>
+          <b-card title="Pharoah Monch" sub-title="Simon says">
             <b-card-img
-              :src='require("../assets/images/single12/Simon.jpg")'
-              alt="Image"
-              class="rounded-0"
-              >
-            </b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Pharoah Monch - Simon Says">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-    </b-card>
-    <br>
-    <b-card
-      border-variant="dark"
-      class="card-right text-center overflow-hidden"
-      no-body
-      style="max-width: 540px;"
-    >
-        <b-row no-gutters>
-          <b-col md="6">
+                :src='require("../assets/images/single12/Simon.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="Ty ft Roots Manuva" sub-title="So, do you want more?">
             <b-card-img
-              :src='require("../assets/images/single12/WantMore.jpg")'
-              alt="Image"
-              class="rounded-0"></b-card-img>
-          </b-col>
-          <b-col md="6">
-            <b-card-body title="Ty ft Roots Manuva - So, do you want more?">
-              <b-card-text>
-                Some info
-              </b-card-text>
-            </b-card-body>
-          </b-col>
-        </b-row>
-      </b-card>
-    </b-card-group>
-    </div>
-  </div>
+                :src='require("../assets/images/single12/WantMore.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+        <b-col>
+          <b-card title="De La Soul" sub-title="Rock Co.Kane flow">
+            <b-card-img
+                :src='require("../assets/images/single12/CoKaneFlow.jpg")'
+                alt="Image"
+                class="rounded-0"
+                >
+              </b-card-img>
+                <b-card-text>
+                  Some info here
+                </b-card-text>
+          </b-card>
+        </b-col>
+      </b-row>
+  </b-container>
 </template>
 
 <script>
@@ -213,11 +135,6 @@ export default {
 </script>
 
 <style scoped>
-
-#single12 {
-  margin-left: 10%;
-  margin-right: 10%;
-}
 
 .overflow-hidden {
   background-color: whitesmoke;
@@ -232,7 +149,4 @@ export default {
   margin-left: 15px;
 }
 
-/* .card-body {
-  background-color: blue;
-} */
 </style>
