@@ -1,5 +1,6 @@
 <template>
-  <div id="dance">
+  <router-link class="link" to="/Dance">
+    <div id="dance">
     <div class="row align-items-center content">
          <p>Dance</p>
           <div class="col-md-6">
@@ -34,6 +35,7 @@
           </div>
         </div>
   </div>
+  </router-link>
 </template>
 
 <script>
@@ -43,5 +45,10 @@ export default {
 </script>
 
 <style>
-
+.link {
+  color: black;
+}
+.link:hover {
+   color: #2980b9
+}
 </style>

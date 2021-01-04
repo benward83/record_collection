@@ -4,6 +4,8 @@
     <br>
     <br>
     <Jumbotron />
+    <br>
+    <br>
     <Search />
     <br>
     <br>

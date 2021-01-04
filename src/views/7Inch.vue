@@ -4,6 +4,8 @@
     <br>
     <br>
     <Jumbotron />
+    <br>
+    <br>
     <Search />
     <br>
     <br>
@@ -25,6 +27,7 @@ export default {
     Jumbotron,
     Search,
     Single7,
+
   },
 
 };

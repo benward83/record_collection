@@ -15,7 +15,7 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Geaorge McCrae" sub-title="Rock your baby">
+          <b-card title="George McCrae" sub-title="Rock your baby">
             <b-card-img
                 :src='require("../assets/images/single7/RockYourBaby.jpg")'
                 alt="Image"
@@ -136,17 +136,8 @@ export default {
 
 <style scoped>
 
-.overflow-hidden {
-  background-color: whitesmoke;
+#single7 {
   font-family: 'Ubuntu', sans-serif;
-}
-
-.card-left {
-  margin-right: 15px;
-}
-
-.card-right {
-  margin-left: 15px;
 }
 
 </style>

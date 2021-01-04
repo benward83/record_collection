@@ -28,6 +28,36 @@ const routes = [
     name: 'Beats',
     component: () => import('../views/Beats.vue'),
   },
+  {
+    path: '/hiphop',
+    name: 'HipHop',
+    component: () => import('../views/HipHop.vue'),
+  },
+  {
+    path: '/jazz',
+    name: 'Jazz',
+    component: () => import('../views/Jazz.vue'),
+  },
+  {
+    path: '/rock',
+    name: 'Rock',
+    component: () => import('../views/Rock.vue'),
+  },
+  {
+    path: '/soul&funk',
+    name: 'Soul&Funk',
+    component: () => import('../views/Soul&Funk.vue'),
+  },
+  {
+    path: '/dance',
+    name: 'Dance',
+    component: () => import('../views/Dance.vue'),
+  },
+  {
+    path: '/world',
+    name: 'World',
+    component: () => import('../views/World.vue'),
+  },
 ];
 
 const router = new VueRouter({

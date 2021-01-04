@@ -4,6 +4,8 @@
     <br>
     <br>
     <Jumbotron />
+    <br>
+    <br>
     <Search />
   </div>
 </template>
@@ -20,6 +22,7 @@ export default {
     Navbar,
     Jumbotron,
     Search,
+
   },
 
 };

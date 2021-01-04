@@ -3,6 +3,7 @@
   <div class="row">
     <div class="col order-last">
        <Rock />
+       <br>
     </div>
     <div class="col">
        <HipHop />
@@ -18,7 +19,6 @@
     <div class="col">
       <Dance />
     </div>
-    <br>
     <br>
     <div class="col order-first">
       <SoulFunk />
@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .container-fluid {
   max-width: 300px;
 }

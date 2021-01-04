@@ -1,7 +1,8 @@
 <template>
-  <div id="hip-hop">
-    <div class="row align-items-center content">
-         <p>Hip Hop</p>
+  <router-link class="link" to="/HipHop">
+    <div id="hip-hop">
+      <div class="row align-items-center content">
+        <p>Hip Hop</p>
           <div class="col-md-6">
             <img
               src="../assets/images/RJD2.jpg"
@@ -33,7 +34,9 @@
             >
           </div>
         </div>
-  </div>
+    </div>
+  </router-link>
+
 </template>
 
 <script>
@@ -43,5 +46,12 @@ export default {
 </script>
 
 <style>
+
+.link {
+  color: black;
+}
+.link:hover {
+   color: #2980b9
+}
 
 </style>
