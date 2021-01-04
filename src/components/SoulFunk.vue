@@ -5,14 +5,14 @@
          <p>Soul/Funk</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/Barkays.jpg"
+              src="../assets/images/Soul&Funk/Barkays.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Blue-Benson.jpg"
+              src="../assets/images/Soul&Funk/Blue-Benson.jpg"
               alt=""
               class="img-fluid"
             >
@@ -21,13 +21,13 @@
         <div class="row align-items-center content">
           <div class="col-md-6">
             <img
-              src="../assets/images/Funkadelic.jpg"
+              src="../assets/images/Soul&Funk/Funkadelic.jpg"
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Stylistics.jpg"
+              src="../assets/images/Soul&Funk/Stylistics.jpg"
               alt=""
               class="img-fluid"
             >

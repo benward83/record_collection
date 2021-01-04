@@ -5,14 +5,14 @@
           <p>Jazz</p>
             <div class="col-md-6">
               <img
-                src="../assets/images/Miles.jpg"
+                src="../assets/images/Jazz/Miles.jpg"
                 alt=""
                 class="img-fluid"
               >
             </div>
             <div class="col-md-6">
               <img
-                src="../assets/images/Nina.jpg"
+                src="../assets/images/Jazz/Nina.jpg"
                 alt=""
                 class="img-fluid"
               >
@@ -21,13 +21,13 @@
           <div class="row align-items-center content">
             <div class="col-md-6">
               <img
-                src="../assets/images/Grover.jpg"
+                src="../assets/images/Jazz/Grover.jpg"
                 class="img-fluid"
               >
             </div>
             <div class="col-md-6">
               <img
-                src="../assets/images/Dexter.jpg"
+                src="../assets/images/Jazz/Dexter.jpg"
                 alt=""
                 class="img-fluid"
               >

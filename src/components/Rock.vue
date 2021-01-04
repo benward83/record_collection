@@ -6,14 +6,14 @@
           <p>Rock</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/American-Beauty.jpg"
+              src="../assets/images/Rock/American-Beauty.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Beatles.jpg"
+              src="../assets/images/Rock/Beatles.jpg"
               alt=""
               class="img-fluid"
             >
@@ -22,14 +22,14 @@
         <div class="row align-items-center content">
           <div class="col-md-6">
             <img
-              src="../assets/images/Desire.jpg"
+              src="../assets/images/Rock/Desire.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Sticky-Fingers.jpg"
+              src="../assets/images/Rock/Sticky-Fingers.jpg"
               alt=""
               class="img-fluid"
             >

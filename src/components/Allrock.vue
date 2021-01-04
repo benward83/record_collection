@@ -1,10 +1,10 @@
 <template>
-  <b-container id="single7">
+  <b-container id="single12">
       <b-row>
         <b-col>
-          <b-card title="William Bell" sub-title="I forgot to be your lover">
+          <b-card title="The Bad Seed" sub-title="The Kids">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/YourLover.jpg")'
+                :src='require("../assets/images/single12/TheKids.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -15,9 +15,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="George McCrae" sub-title="Rock your baby">
+          <b-card title="Gangstar" sub-title="Full Clip">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/RockYourBaby.jpg")'
+                :src='require("../assets/images/single12/FullClip.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -28,9 +28,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="The Fatback Band" sub-title="Double Dutch">
+          <b-card title="A Tribe Called Quest" sub-title="Can I kick it?">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/DoubleDutch.jpg")'
+                :src='require("../assets/images/single12/Kick-It.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -44,9 +44,9 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="Gloria Jones" sub-title="Tainted Love">
+          <b-card title="DJ Vadim" sub-title="The Terrorist">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/TaintedLove.jpg")'
+                :src='require("../assets/images/single12/Terrorist.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -57,9 +57,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Major Harris" sub-title="My Way">
+          <b-card title="Snoop Dogg" sub-title="Drop it like it's hot">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/Major.jpg")'
+                :src='require("../assets/images/single12/DropIt.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -70,9 +70,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="The Whispers" sub-title="This kind of lovin'">
+          <b-card title="Rae & Christian" sub-title="Ain't nothing like Hip Hop music">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/Lovin.jpg")'
+                :src='require("../assets/images/single12/AintNothing.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -86,9 +86,9 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="Archie Bell & The Drells" sub-title="Tighten up">
+          <b-card title="Pharoah Monch" sub-title="Simon says">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/Tighten.jpg")'
+                :src='require("../assets/images/single12/Simon.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -99,9 +99,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="The Dells" sub-title="">
+          <b-card title="Ty ft Roots Manuva" sub-title="So, do you want more?">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/Dells.jpg")'
+                :src='require("../assets/images/single12/WantMore.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -112,9 +112,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Stampeders" sub-title="Summer in the city">
+          <b-card title="De La Soul" sub-title="Rock Co.Kane flow">
             <b-card-img
-                :src='require("../assets/images/Soul&Funk/single7/Summer.jpg")'
+                :src='require("../assets/images/single12/CoKaneFlow.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -136,8 +136,7 @@ export default {
 
 <style scoped>
 
-#single7 {
+#single12 {
   font-family: 'Ubuntu', sans-serif;
 }
-
 </style>

@@ -5,14 +5,14 @@
         <p>Hip Hop</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/RJD2.jpg"
+              src="../assets/images/HipHop/RJD2.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/KandD.jpg"
+              src="../assets/images/HipHop/Massive.jpg"
               alt=""
               class="img-fluid"
             >
@@ -21,14 +21,14 @@
         <div class="row align-items-center content">
           <div class="col-md-6">
             <img
-              src="../assets/images/Black_on_both_sides.jpg"
+              src="../assets/images/HipHop/Black_on_both_sides.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Entroducing.jpg"
+              src="../assets/images/HipHop/Entroducing.jpg"
               alt=""
               class="img-fluid"
             >

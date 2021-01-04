@@ -5,14 +5,14 @@
          <p>Dance</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/Aphex.jpg"
+              src="../assets/images/Dance/Aphex.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Plump.jpg"
+              src="../assets/images/Dance/Plump.jpg"
               alt=""
               class="img-fluid"
             >
@@ -21,14 +21,14 @@
         <div class="row align-items-center content">
           <div class="col-md-6">
             <img
-              src="../assets/images/Massive.jpg"
+              src="../assets/images/Dance/KandD.jpg"
               alt=""
               class="img-fluid"
             >
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Leftfield.jpg"
+              src="../assets/images/Dance/Leftfield.jpg"
               alt=""
               class="img-fluid"
             >
