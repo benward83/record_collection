@@ -6,7 +6,9 @@
         <p> {{ phone }} </p>
       </div>
       <div id="contacts-social">
-        <div></div>
+        <div>
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </div>
         <div></div>
         <div></div>
       </div>
@@ -34,9 +36,9 @@ export default {
 
 #container {
   padding-top:20px;
-  margin-top:20px;
+  margin-top:80px;
   color:whitesmoke;
-  background-color:black;
+  background-color:rgb(27, 27, 27);
   display:flex;
   flex-direction:column;
   align-items:center;

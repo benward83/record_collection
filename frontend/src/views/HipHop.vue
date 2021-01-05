@@ -11,7 +11,7 @@
     <Allhiphop />
     <br>
     <br>
-
+    <Footer />
   </div>
 </template>
 
@@ -21,20 +21,22 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Allhiphop from '@/components/Allhiphop.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'home',
+  name: 'hiphop',
   components: {
     Navbar,
     Search,
     Jumbotron,
+    Footer,
     Allhiphop,
   },
 };
 </script>
 
 <style>
-#home {
+#hiphop {
   background-color: whitesmoke;
   margin-top: 10px;
 }

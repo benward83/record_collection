@@ -11,7 +11,7 @@
     <Alljazz />
     <br>
     <br>
-
+    <Footer />
   </div>
 </template>
 
@@ -21,20 +21,22 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Alljazz from '@/components/Alljazz.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'home',
+  name: 'jazz',
   components: {
     Navbar,
     Search,
     Jumbotron,
     Alljazz,
+    Footer,
   },
 };
 </script>
 
 <style>
-#home {
+#jazz {
   background-color: whitesmoke;
   margin-top: 10px;
 }

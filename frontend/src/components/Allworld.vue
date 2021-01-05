@@ -1,10 +1,10 @@
 <template>
-  <b-container id="single12">
+  <b-container id="world">
       <b-row>
         <b-col>
-          <b-card title="The Bad Seed" sub-title="The Kids">
+          <b-card title="King Sunny Adé" sub-title="Juju Music">
             <b-card-img
-                :src='require("../assets/images/single12/TheKids.jpg")'
+                :src='require("../assets/images/World/KingSunny.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -15,9 +15,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Gangstar" sub-title="Full Clip">
+          <b-card title="Masato Minami" sub-title="The Tropics">
             <b-card-img
-                :src='require("../assets/images/single12/FullClip.jpg")'
+                :src='require("../assets/images/World/Masato.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -28,9 +28,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="A Tribe Called Quest" sub-title="Can I kick it?">
+          <b-card title="Salman Sahukur" sub-title="Oud">
             <b-card-img
-                :src='require("../assets/images/single12/Kick-It.jpg")'
+                :src='require("../assets/images/World/Salman.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -44,9 +44,9 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="DJ Vadim" sub-title="The Terrorist">
+          <b-card title="Martha Jean Claude" sub-title="Songs of Haiti">
             <b-card-img
-                :src='require("../assets/images/single12/Terrorist.jpg")'
+                :src='require("../assets/images/World/Marta.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -57,9 +57,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Snoop Dogg" sub-title="Drop it like it's hot">
+          <b-card title="Maria Dolores Pradera" sub-title="Exitos de Maria Dolores Pradera">
             <b-card-img
-                :src='require("../assets/images/single12/DropIt.jpg")'
+                :src='require("../assets/images/World/Pradera.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -70,9 +70,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Rae & Christian" sub-title="Ain't nothing like Hip Hop music">
+          <b-card title="Mercedes Sosa" sub-title="Gracias a la vida">
             <b-card-img
-                :src='require("../assets/images/single12/AintNothing.jpg")'
+                :src='require("../assets/images/World/Mercedes.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -86,9 +86,9 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="Pharoah Monch" sub-title="Simon says">
+          <b-card title="Elis Regina" sub-title="O fino do fino">
             <b-card-img
-                :src='require("../assets/images/single12/Simon.jpg")'
+                :src='require("../assets/images/World/Elis.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -99,9 +99,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Ty ft Roots Manuva" sub-title="So, do you want more?">
+          <b-card title="Buena Vista Social Club" sub-title="Buena Vista Social Club">
             <b-card-img
-                :src='require("../assets/images/single12/WantMore.jpg")'
+                :src='require("../assets/images/World/Buena.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >
@@ -112,9 +112,9 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="De La Soul" sub-title="Rock Co.Kane flow">
+          <b-card title="Kassa Tessema" sub-title="Kassa Tessema">
             <b-card-img
-                :src='require("../assets/images/single12/CoKaneFlow.jpg")'
+                :src='require("../assets/images/World/Kassa.jpg")'
                 alt="Image"
                 class="rounded-0"
                 >

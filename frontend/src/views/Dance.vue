@@ -11,7 +11,7 @@
     <Alldance />
     <br>
     <br>
-
+    <Footer />
   </div>
 </template>
 
@@ -21,20 +21,22 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Alldance from '@/components/Alldance.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
-  name: 'home',
+  name: 'dance',
   components: {
     Navbar,
     Search,
     Jumbotron,
+    Footer,
     Alldance,
   },
 };
 </script>
 
 <style>
-#home {
+#dance {
   background-color: whitesmoke;
   margin-top: 10px;
 }

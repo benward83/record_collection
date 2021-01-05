@@ -10,6 +10,9 @@
     <br>
     <br>
     <Single12 />
+    <br>
+    <br>
+    <Footer />
   </div>
 </template>
 
@@ -19,6 +22,7 @@ import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
 import Single12 from '@/components/Single12.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: '12-inch',
@@ -27,7 +31,7 @@ export default {
     Jumbotron,
     Search,
     Single12,
-
+    Footer,
   },
 
 };
