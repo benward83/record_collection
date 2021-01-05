@@ -1,0 +1,8 @@
+@import finitio/data
+
+Error = {
+  error : String
+}
+
+ID = Integer
+
