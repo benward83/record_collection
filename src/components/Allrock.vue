@@ -1,5 +1,5 @@
 <template>
-  <b-container id="single12">
+  <b-container id="all-rock">
       <b-row>
         <b-col>
           <b-card title="The Bad Seed" sub-title="The Kids">
@@ -136,7 +136,7 @@ export default {
 
 <style scoped>
 
-#single12 {
+#all-rock {
   font-family: 'Ubuntu', sans-serif;
 }
 </style>
