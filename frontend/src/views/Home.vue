@@ -12,7 +12,6 @@
     <Genres />
     <br>
     <br>
-    <PlayingNow />
   </div>
 </template>
 
@@ -21,7 +20,6 @@
 import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
-import PlayingNow from '@/components/PlayingNow.vue';
 import Genres from '@/components/Genres.vue';
 
 export default {
@@ -30,7 +28,6 @@ export default {
     Navbar,
     Jumbotron,
     Search,
-    PlayingNow,
     Genres,
 
   },

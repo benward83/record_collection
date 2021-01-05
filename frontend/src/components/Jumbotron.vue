@@ -10,7 +10,7 @@
 
     <hr class="my-4">
 
-    <p>
+    <p class="p-text">
       Feel free to browse around and choose some tunes that fit your mood!
     </p>
   </b-jumbotron>
@@ -42,7 +42,8 @@ export default {
     text-decoration-color: whitesmoke;
   }
 
-  .p {
+  .p-text {
     font-size: medium;
+    color: cornsilk;
   }
 </style>
