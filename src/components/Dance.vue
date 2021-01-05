@@ -1,0 +1,54 @@
+<template>
+  <router-link class="link" to="/Dance">
+    <div id="dance">
+    <div class="row align-items-center content">
+         <p>Dance</p>
+          <div class="col-md-6">
+            <img
+              src="../assets/images/Dance/Aphex.jpg"
+              alt=""
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="../assets/images/Dance/Plump.jpg"
+              alt=""
+              class="img-fluid"
+            >
+          </div>
+        </div>
+        <div class="row align-items-center content">
+          <div class="col-md-6">
+            <img
+              src="../assets/images/Dance/KandD.jpg"
+              alt=""
+              class="img-fluid"
+            >
+          </div>
+          <div class="col-md-6">
+            <img
+              src="../assets/images/Dance/Leftfield.jpg"
+              alt=""
+              class="img-fluid"
+            >
+          </div>
+        </div>
+  </div>
+  </router-link>
+</template>
+
+<script>
+export default {
+
+};
+</script>
+
+<style>
+.link {
+  color: black;
+}
+.link:hover {
+   color: #2980b9
+}
+</style>
