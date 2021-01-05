@@ -12,6 +12,7 @@
     <Genres />
     <br>
     <br>
+    <Footer />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
 import Genres from '@/components/Genres.vue';
+import Footer from '@/components/Footer.vue';
 
 export default {
   name: 'home',
@@ -29,6 +31,7 @@ export default {
     Jumbotron,
     Search,
     Genres,
+    Footer,
 
   },
 };
