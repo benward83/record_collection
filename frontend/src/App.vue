@@ -9,8 +9,7 @@
 </script>
 
 <style>
-#app {
+body {
   background-color: whitesmoke;
-  margin-top: 10px;
 }
 </style>

@@ -65,7 +65,7 @@ export default {
 #contacts-social div {
   height:30px;
   width:30px;
-  background-color:whitesmoke;
+  background-color:rgb(39, 1, 1);
   border-radius:50%;
 }
 #mentions p {

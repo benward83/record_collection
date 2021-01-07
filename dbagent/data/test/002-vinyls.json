@@ -1,0 +1,90 @@
+[
+  {
+    "id": "daf7dc49-852d-4b12-b8b4-385a73065da5",
+    "artist_id": "ae5ce156-967f-40af-bae2-20004c047380",
+    "name": "Seven Days of Night",
+    "release_date": 1969,
+    "record_label": "Brunswick Records",
+    "image": "",
+    "type": "LP",
+    "quality": "M",
+    "rating": 4
+  },
+  {
+    "id": "d43fe469-96a8-40ac-8a11-cbc44395a055",
+    "artist_id": "b4caf2f0-f9ad-488e-ace1-a8f91f123c4e",
+    "name": "Soul Session - live",
+    "release_date": 1989,
+    "record_label": "Scotti Brothers Records",
+    "image": "",
+    "type": "LP",
+    "quality": "E",
+    "rating": 3
+  },
+  {
+    "id": "cdce9e15-5db5-4ca7-bdbb-149524079485",
+    "artist_id": "b74874d9-986a-484c-9b1e-ec58202d7465",
+    "name": "In Flight",
+    "release_date": 1977,
+    "record_label": "Warner Bros",
+    "image": "",
+    "type": "LP",
+    "quality": "E",
+    "rating": 4
+  },
+  {
+    "id": "4f1b992d-4347-4622-b1af-e9fffc375146",
+    "artist_id": "b74874d9-986a-484c-9b1e-ec58202d7465",
+    "name": "20/20",
+    "release_date": 1985,
+    "record_label": "Warner Records",
+    "image": "",
+    "type": "LP",
+    "quality": "E",
+    "rating": 3.5
+  },
+  {
+    "id": "51e84d60-ffc4-4f4d-b58c-22fc26745f91",
+    "artist_id": "8d5c32d0-8ae3-40b5-bd60-8b74b17f9b42",
+    "name": "Look Out for #1",
+    "release_date": 1976,
+    "record_label": "A&M Records",
+    "image": "",
+    "type": "LP",
+    "quality": "VG",
+    "rating": 3.8
+  },
+  {
+    "id": "39c0442c-1d45-45fe-845e-6f5e1d5c112d",
+    "artist_id": "5b1c1245-7192-4723-a31b-5b815e0888ed",
+    "name": "The Chi-Lites Live",
+    "release_date": 2004,
+    "record_label": "Mar-Ance Records",
+    "image": "",
+    "type": "LP",
+    "quality": "E",
+    "rating": 3
+  },
+  {
+    "id": "5bcdf5c2-792b-4243-9614-e9fe8a7d74a0",
+    "artist_id": "50e75a56-10d3-4338-8f14-c591da5c0a04",
+    "name": "Safe as Milk",
+    "release_date": 1967,
+    "record_label": "Buddah Records",
+    "image": "",
+    "type": "LP",
+    "quality": "E",
+    "rating": 4
+  },
+  {
+    "id": "46a5c804-871b-4a55-a3ac-c89bf68c5a55",
+    "artist_id": "88647fb3-47a4-4ba1-b566-512dd33e0f98",
+    "name": "Desire",
+    "release_date": 1976,
+    "record_label": "Colombia Records",
+    "image": "",
+    "type": "LP",
+    "quality": "VG",
+    "rating": 4
+  }
+]

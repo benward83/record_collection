@@ -1,5 +1,5 @@
 <template>
-  <b-jumbotron class="text">
+  <b-jumbotron>
     <template #header></template>
 
     <template #lead>
@@ -10,7 +10,7 @@
 
     <hr class="my-4">
 
-    <p class="p-text">
+    <p>
 
     </p>
   </b-jumbotron>
@@ -34,15 +34,5 @@ export default {
   margin-left: 5%;
   margin-right: 5%;
   border-radius: 5px 5px 5px 5px;
-  }
-
-  .text {
-    font-family: 'Ubuntu', sans-serif;
-    color: black;
-  }
-
-  .p-text {
-    font-size: medium;
-    color: cornsilk;
   }
 </style>
