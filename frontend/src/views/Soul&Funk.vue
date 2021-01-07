@@ -2,7 +2,8 @@
   <div id="soul-funk">
     <Navbar />
     <br>
-    <Jumbotron />
+    <br>
+    <Header />
     <br>
     <br>
     <Search />
@@ -20,7 +21,7 @@
 import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Allsoulandfunk from '@/components/Allsoulandfunk.vue';
-import Jumbotron from '@/components/Jumbotron.vue';
+import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -28,7 +29,7 @@ export default {
   components: {
     Navbar,
     Search,
-    Jumbotron,
+    Header,
     Footer,
     Allsoulandfunk,
   },

@@ -2,7 +2,8 @@
   <div id="jazz">
     <Navbar />
     <br>
-    <Jumbotron />
+    <br>
+    <Header />
     <br>
     <br>
     <Search />
@@ -20,7 +21,7 @@
 import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Alljazz from '@/components/Alljazz.vue';
-import Jumbotron from '@/components/Jumbotron.vue';
+import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
 export default {
@@ -28,7 +29,7 @@ export default {
   components: {
     Navbar,
     Search,
-    Jumbotron,
+    Header,
     Alljazz,
     Footer,
   },

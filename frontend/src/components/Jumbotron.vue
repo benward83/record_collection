@@ -39,7 +39,6 @@ export default {
   .text {
     font-family: 'Ubuntu', sans-serif;
     color: black;
-    text-decoration-color: whitesmoke;
   }
 
   .p-text {

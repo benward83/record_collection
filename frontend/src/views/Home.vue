@@ -32,7 +32,6 @@ export default {
     Search,
     Genres,
     Footer,
-
   },
 };
 </script>

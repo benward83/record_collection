@@ -2,6 +2,7 @@
   <div id="container">
     <div id="info">
       <div id="contact">
+        <p>For info about buying or selling records, please contact me @:</p>
         <p>{{ mail }}</p>
         <p> {{ phone }} </p>
       </div>
@@ -36,7 +37,7 @@ export default {
 
 #container {
   padding-top:20px;
-  margin-top:80px;
+  margin-bottom:10px;
   color:whitesmoke;
   background-color:rgb(27, 27, 27);
   display:flex;
@@ -46,16 +47,17 @@ export default {
   margin-right: 2%;
   border-radius: 10px 10px 10px 10px;
 }
+
 #info {
   display:flex;
   justify-content:space-around;
   align-items:center;
   width:100%;
 }
-#contact{
+#contact {
   text-align:right;
 }
-#contacts-social{
+#contacts-social {
   width:20%;
   display : flex;
   justify-content : space-between;
@@ -63,7 +65,7 @@ export default {
 #contacts-social div {
   height:30px;
   width:30px;
-  background-color:white;
+  background-color:whitesmoke;
   border-radius:50%;
 }
 #mentions p {
