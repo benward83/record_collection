@@ -48,11 +48,7 @@ Sequel.migration do
       PRIMARY KEY (artist_id, song_id)
     );
 
-    CREATE TABLE albums_feature_artists (
-      artist_id UUID REFERENCES artists (id),
-      album_id UUID REFERENCES albums (id),
-      PRIMARY KEY (artist_id, album_id)
-    );
+
 
     SQL
   end
