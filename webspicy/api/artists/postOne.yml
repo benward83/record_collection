@@ -1,0 +1,35 @@
+---
+name: |-
+  Creates an Artist
+
+url: |-
+  /artists/
+
+services:
+- method: |-
+    POST
+
+  description: |-
+    Creates a new artist
+
+  input_schema: |-
+    {
+      name: String
+    }
+
+  output_schema: |-
+    Artist
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        name: Dj Shadow
+      expected:
+        content_type: application/json
+        status: 200
+

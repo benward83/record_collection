@@ -1,0 +1,37 @@
+---
+name: |-
+  Get All Artists
+
+url: |-
+  /artists/
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns the list of artists
+
+  input_schema: |-
+    {
+
+    }
+
+  output_schema: |-
+    [Artist]
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params: {}
+      expected:
+        content_type: application/json
+        status: 200
+      assert:
+        - notEmpty
+
+  counterexamples: []

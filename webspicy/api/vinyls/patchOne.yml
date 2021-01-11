@@ -1,0 +1,48 @@
+---
+name: |-
+  Updates an Vinyl
+
+url: |-
+  /vinyls/{id}
+
+services:
+- method: |-
+    PATCH
+
+  description: |-
+    Update an existing vinyl
+
+  input_schema: |-
+    {
+      id: ID
+      name: String
+    }
+
+  output_schema: |-
+    Vinyl
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 1
+        name: Safe as Miylk
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for a non-existent vinyl
+      params:
+        id: 56789765
+        name: Safe as Miylk
+      expected:
+        content_type: application/json
+        status: 404
+

@@ -1,0 +1,43 @@
+---
+name: |-
+  Gets one Artist
+
+url: |-
+  /artists/{id}
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns a single artist
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Ingredient
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 1
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+    - description: |-
+        when requested for a non-existent artist
+      params:
+        id: 16656789
+      expected:
+        content_type: application/json
+        status: 404

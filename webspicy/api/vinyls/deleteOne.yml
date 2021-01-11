@@ -1,0 +1,44 @@
+---
+name: |-
+  Deletes a Vinyl
+
+url: |-
+  /vinyls/{id}
+
+services:
+- method: |-
+    DELETE
+
+  description: |-
+    Delete an existing vinyl
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Vinyl
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: d43fe469-96a8-40ac-8a11-cbc44395a055
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for an non-existent vinyl
+      params:
+        id: 56789765
+      expected:
+        content_type: application/json
+        status: 404

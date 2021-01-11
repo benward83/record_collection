@@ -28,12 +28,12 @@ router.get('/:id', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Add a new artist
+// Add a new vinyl
 
 router.post('/', (req, res) => {
   const newVinyl = req.body;
   db('vinyls')
-    .returning(['name', 'id'])
+    .returning(['*'])
     .insert(newVinyl)
     .then(result => {
       return res.json(result[0]);
@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Update an song
+// Update a vinyl
 
 router.patch('/:id', (req, res) => {
   db('vinyls')
@@ -57,7 +57,7 @@ router.patch('/:id', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Delete an song
+// Delete a vinyl
 
 router.delete('/:id', (req, res) => {
   db('vinyls')

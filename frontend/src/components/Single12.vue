@@ -2,7 +2,13 @@
   <b-container id="single12">
       <b-row>
         <b-col>
-          <b-card title="The Bad Seed" sub-title="The Kids">
+          <b-card
+            title="The Bad Seed"
+            sub-title="The Kids"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/TheKids.jpg")'
                 alt="Image"
@@ -15,7 +21,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Gangstar" sub-title="Full Clip">
+          <b-card
+            title="Gangstar"
+            sub-title="Full Clip"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/FullClip.jpg")'
                 alt="Image"
@@ -28,7 +40,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="A Tribe Called Quest" sub-title="Can I kick it?">
+          <b-card
+            title="A Tribe Called Quest"
+            sub-title="Can I kick it?"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/Kick-It.jpg")'
                 alt="Image"
@@ -44,7 +62,13 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="DJ Vadim" sub-title="The Terrorist">
+          <b-card
+            title="DJ Vadim"
+            sub-title="The Terrorist"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/Terrorist.jpg")'
                 alt="Image"
@@ -57,7 +81,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Snoop Dogg" sub-title="Drop it like it's hot">
+          <b-card
+            title="Snoop Dogg"
+            sub-title="Drop it like it's hot"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/DropIt.jpg")'
                 alt="Image"
@@ -70,7 +100,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Rae & Christian" sub-title="Ain't nothing like Hip Hop music">
+          <b-card
+            title="Rae & Christian"
+            sub-title="Ain't nothing like Hip Hop music"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/AintNothing.jpg")'
                 alt="Image"
@@ -86,7 +122,13 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="Pharoah Monch" sub-title="Simon says">
+          <b-card
+            title="Pharoah Monch"
+            sub-title="Simon says"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/Simon.jpg")'
                 alt="Image"
@@ -99,7 +141,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Ty ft Roots Manuva" sub-title="So, do you want more?">
+          <b-card
+            title="Ty ft Roots Manuva"
+            sub-title="So, do you want more?"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/WantMore.jpg")'
                 alt="Image"
@@ -112,7 +160,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="De La Soul" sub-title="Rock Co.Kane flow">
+          <b-card
+            title="De La Soul"
+            sub-title="Rock Co.Kane flow"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/HipHop/single12/CoKaneFlow.jpg")'
                 alt="Image"
@@ -130,7 +184,11 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
@@ -138,5 +196,10 @@ export default {
 
 #single12 {
   font-family: 'Ubuntu', sans-serif;
+}
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 </style>

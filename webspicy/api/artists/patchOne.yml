@@ -1,0 +1,48 @@
+---
+name: |-
+  Updates an Artist
+
+url: |-
+  /artists/{id}
+
+services:
+- method: |-
+    PATCH
+
+  description: |-
+    Update an existing ingredient
+
+  input_schema: |-
+    {
+      id: ID
+      name: String
+    }
+
+  output_schema: |-
+    Artist
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 1
+        name: Myles Davis
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for a non-existent ingredient
+      params:
+        id: 56789765
+        name: Myles Davis
+      expected:
+        content_type: application/json
+        status: 404
+

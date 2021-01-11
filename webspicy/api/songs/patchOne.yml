@@ -1,0 +1,48 @@
+---
+name: |-
+  Updates a Song
+
+url: |-
+  /songs/{id}
+
+services:
+- method: |-
+    PATCH
+
+  description: |-
+    Update an existing song
+
+  input_schema: |-
+    {
+      id: ID
+      name: String
+    }
+
+  output_schema: |-
+    Song
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 1
+        name: Tears of a Clowyn
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for a non-existent song
+      params:
+        id: 56789765
+        name: Tears of a Clowyn
+      expected:
+        content_type: application/json
+        status: 404
+

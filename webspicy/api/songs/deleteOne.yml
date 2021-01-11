@@ -1,0 +1,44 @@
+---
+name: |-
+  Deletes a Song
+
+url: |-
+  /songs/{id}
+
+services:
+- method: |-
+    DELETE
+
+  description: |-
+    Delete an existing song
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Song
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 65073cbe-1351-4435-b811-75f7c7ca0647
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for an non-existent song
+      params:
+        id: 56789765
+      expected:
+        content_type: application/json
+        status: 404

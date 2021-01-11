@@ -1,0 +1,37 @@
+---
+name: |-
+  Get All Vinyls
+
+url: |-
+  /vinyls/
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns the list of vinyls
+
+  input_schema: |-
+    {
+
+    }
+
+  output_schema: |-
+    [Vinyls]
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params: {}
+      expected:
+        content_type: application/json
+        status: 200
+      assert:
+        - notEmpty
+
+  counterexamples: []

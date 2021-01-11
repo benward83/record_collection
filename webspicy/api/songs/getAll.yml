@@ -1,0 +1,37 @@
+---
+name: |-
+  Get All Songs
+
+url: |-
+  /songs/
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns the list of songs
+
+  input_schema: |-
+    {
+
+    }
+
+  output_schema: |-
+    [Song]
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params: {}
+      expected:
+        content_type: application/json
+        status: 200
+      assert:
+        - notEmpty
+
+  counterexamples: []

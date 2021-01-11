@@ -1,0 +1,43 @@
+---
+name: |-
+  Gets one Vinyl
+
+url: |-
+  /vinyls/{id}
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns a single vinyl
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Vinyl
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: 1
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+    - description: |-
+        when requested for a non-existent vinyl
+      params:
+        id: 16656789
+      expected:
+        content_type: application/json
+        status: 404

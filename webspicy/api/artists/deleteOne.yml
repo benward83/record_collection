@@ -1,0 +1,44 @@
+---
+name: |-
+  Deletes an Artist
+
+url: |-
+  /artists/{id}
+
+services:
+- method: |-
+    DELETE
+
+  description: |-
+    Delete an existing artist
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Artist
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        id: ae5ce156-967f-40af-bae2-20004c047380
+      expected:
+        content_type: application/json
+        status: 200
+
+  counterexamples:
+
+    - description: |-
+        when requested for an non-existent artist
+      params:
+        id: 56789765
+      expected:
+        content_type: application/json
+        status: 404

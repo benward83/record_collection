@@ -1,0 +1,35 @@
+---
+name: |-
+  Creates a Song
+
+url: |-
+  /songs/
+
+services:
+- method: |-
+    POST
+
+  description: |-
+    Creates a new song
+
+  input_schema: |-
+    {
+      name: String
+    }
+
+  output_schema: |-
+    Song
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested
+      params:
+        name: The Number Song
+      expected:
+        content_type: application/json
+        status: 200
+

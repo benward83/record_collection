@@ -28,12 +28,12 @@ router.get('/:id', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Add a new artist
+// Add a new song
 
 router.post('/', (req, res) => {
   const newSong = req.body;
   db('songs')
-    .returning(['name', 'id'])
+    .returning(['*'])
     .insert(newSong)
     .then(result => {
       return res.json(result[0]);
@@ -41,7 +41,7 @@ router.post('/', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Update an song
+// Update a song
 
 router.patch('/:id', (req, res) => {
   db('songs')
@@ -57,7 +57,7 @@ router.patch('/:id', (req, res) => {
     .catch(err => res.send(500, err));
 });
 
-// Delete an song
+// Delete a song
 
 router.delete('/:id', (req, res) => {
   db('songs')

@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
       if (result.length) {
         return res.json(result[0]);
       }
-      res.json(404, { error: 'Artsist not found' });
+      res.json(404, { error: 'Artist not found' });
     })
     .catch(err => res.send(500, err));
 });
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   const newArtist = req.body;
   db('artists')
-    .returning(['name', 'id'])
+    .returning(['*'])
     .insert(newArtist)
     .then(result => {
       return res.json(result[0]);
@@ -52,7 +52,7 @@ router.patch('/:id', (req, res) => {
       if (result.length) {
         return res.json(result[0]);
       }
-      return res.json(404, { error: 'Arsits not found' });
+      return res.json(404, { error: 'Artist not found' });
     })
     .catch(err => res.send(500, err));
 });
