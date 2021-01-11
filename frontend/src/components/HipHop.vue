@@ -1,6 +1,11 @@
 <template>
   <router-link class="link" to="/HipHop">
-    <div id="hip-hop">
+    <div
+      id="hip-hop"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      :class="{active: hover}"
+    >
       <div class="row align-items-center content">
         <p>Hip Hop</p>
           <div class="col-md-6">
@@ -41,7 +46,11 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
@@ -50,8 +59,10 @@ export default {
 .link {
   color: black;
 }
-.link:hover {
-   color: #2980b9
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 
 </style>

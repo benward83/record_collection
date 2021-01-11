@@ -1,0 +1,4 @@
+node_modules
+Dockerfile.built
+Dockerfile.log
+volumes

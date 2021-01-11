@@ -1,6 +1,11 @@
 <template>
   <router-link class="link" to="/Jazz">
-    <div id="jazz">
+    <div
+      id="jazz"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      :class="{active: hover}"
+    >
       <div class="row align-items-center content">
           <p>Jazz</p>
             <div class="col-md-6">
@@ -40,7 +45,11 @@
 <script>
 export default {
   name: 'jazz',
-
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
@@ -48,5 +57,10 @@ export default {
 
 .img-fluid {
   border: 2px solid black;
+}
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 </style>

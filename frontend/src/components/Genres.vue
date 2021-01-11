@@ -1,30 +1,30 @@
 <template>
-<div id="genres" class="container">
-  <div class="row">
-    <div class="col order-last">
-       <Rock />
-       <br>
+  <div id="genres" class="container">
+    <div class="row">
+      <div class="col order-last">
+        <Rock />
+        <br>
+      </div>
+      <div class="col">
+        <HipHop />
+      </div>
+      <div class="col order-first">
+        <Jazz />
+      </div>
     </div>
-    <div class="col">
-       <HipHop />
-    </div>
-    <div class="col order-first">
-       <Jazz />
+    <div class="row">
+      <div class="col order-last">
+        <World />
+      </div>
+      <div class="col">
+        <Dance />
+      </div>
+      <br>
+      <div class="col order-first">
+        <SoulFunk />
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col order-last">
-       <World />
-    </div>
-    <div class="col">
-      <Dance />
-    </div>
-    <br>
-    <div class="col order-first">
-      <SoulFunk />
-    </div>
-  </div>
-</div>
 </template>
 
 <script>

@@ -1,6 +1,11 @@
 <template>
   <router-link class="link" to="/World">
-    <div id="world">
+    <div
+      id="world"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      :class="{active: hover}"
+    >
       <div class="row align-items-center content">
         <p>World</p>
         <div class="col-md-6">
@@ -40,6 +45,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      hover: false,
+    };
+  },
 
 };
 </script>
@@ -48,7 +58,9 @@ export default {
 .link {
   color: black;
 }
-.link:hover {
-   color: #5a0008
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 </style>

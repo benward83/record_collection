@@ -37,6 +37,7 @@ export default {
 
 #container {
   padding-top:20px;
+  margin-top:50px;
   margin-bottom:10px;
   color:whitesmoke;
   background-color:rgb(27, 27, 27);
@@ -65,7 +66,7 @@ export default {
 #contacts-social div {
   height:30px;
   width:30px;
-  background-color:rgb(39, 1, 1);
+  background-color:rgb(95, 0, 0);
   border-radius:50%;
 }
 #mentions p {

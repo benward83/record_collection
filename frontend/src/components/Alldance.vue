@@ -2,7 +2,13 @@
   <b-container id="all-dance">
       <b-row>
         <b-col>
-          <b-card title="Aphex Twin" sub-title="Windowlicker">
+          <b-card
+            title="Aphex Twin"
+            sub-title="Windowlicker"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/Aphex.jpg")'
                 alt="Image"
@@ -15,7 +21,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Leftfield" sub-title="Leftfield">
+          <b-card
+            title="Leftfield"
+            sub-title="Leftfield"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/Leftfield.jpg")'
                 alt="Image"
@@ -28,7 +40,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Kruder & Dorfmeister" sub-title="The K&D sessions">
+          <b-card
+            title="Kruder & Dorfmeister"
+            sub-title="The K&D sessions"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/KandD.jpg")'
                 alt="Image"
@@ -44,7 +62,13 @@
       <br>
       <b-row>
         <b-col>
-          <b-card title="Stanton Warriors" sub-title="Da Antidote">
+          <b-card
+            title="Stanton Warriors"
+            sub-title="Da Antidote"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/StantonAntidote.jpg")'
                 alt="Image"
@@ -57,7 +81,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Stanton Warriors" sub-title="Da Virus">
+          <b-card
+            title="Stanton Warriors"
+            sub-title="Da Virus"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/StantonVirus.jpg")'
                 alt="Image"
@@ -70,7 +100,13 @@
           </b-card>
         </b-col>
         <b-col>
-          <b-card title="Depeche Mode" sub-title="Box set - Best of">
+          <b-card
+            title="Depeche Mode"
+            sub-title="Box set - Best of"
+            @mouseover="hover = true"
+            @mouseleave="hover = false"
+            :class="{active: hover}"
+          >
             <b-card-img
                 :src='require("../assets/images/Dance/Depeche.jpg")'
                 alt="Image"
@@ -88,7 +124,11 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
 
@@ -96,5 +136,10 @@ export default {
 
 #all-dance {
   font-family: 'Ubuntu', sans-serif;
+}
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 </style>
