@@ -24,6 +24,13 @@ import Alljazz from '@/components/Alljazz.vue';
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
+import Miles from '@/assets/images/Jazz/Miles.jpg';
+import Nina from '@/assets/images/Jazz/Nina.jpg';
+import Grover from '@/assets/images/Jazz/Grover.jpg';
+import Dexter from '@/assets/images/Jazz/Dexter.jpg';
+import BlueNote from '@/assets/images/Jazz/BlueNote.jpg';
+import DGBlues from '@/assets/images/Jazz/DGBlues.jpg';
+
 export default {
   name: 'jazz',
   components: {
@@ -38,39 +45,39 @@ export default {
       tracks: [
         {
           id: 1,
-          artist: 'Miles Davis',
+          title: 'Miles Davis',
           subtitle: 'Blue Period',
-          img: '../assets/images/Jazz/Miles.jpg',
+          img: Miles,
         },
         {
           id: 2,
           title: 'Nina Simone',
           subtitle: 'Nina Simone',
-          img: '../assets/images/Jazz/Nina.jpg',
+          img: Nina,
         },
         {
           id: 3,
           title: 'Grover Washington jr',
           subtitle: 'Inner city blues',
-          img: '../assets/images/Jazz/Grover.jpg',
+          img: Grover,
         },
         {
           id: 4,
           title: 'Dexter Gordon',
           subtitle: '204',
-          img: '../assets/images/Jazz/Dexter.jpg',
+          img: Dexter,
         },
         {
           id: 5,
           title: 'Various Artists',
           subtitle: 'Blue Note',
-          img: '../assets/images/Jazz/BlueNote.jpg',
+          img: BlueNote,
         },
         {
           id: 6,
           title: 'Dexter Gordon',
           subtitle: 'Blues a la Suisse',
-          img: '../assets/images/Jazz/DGBlues.jpg',
+          img: DGBlues,
         },
       ],
     };

@@ -9,7 +9,7 @@
     <Search />
     <br>
     <br>
-    <Alldance />
+    <Alldance :tracks="tracks"/>
     <br>
     <br>
     <Footer />
@@ -24,6 +24,13 @@ import Alldance from '@/components/Alldance.vue';
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 
+import Aphex from '@/assets/images/Dance/Aphex.jpg';
+import KandD from '@/assets/images/Dance/KandD.jpg';
+import Leftfield from '@/assets/images/Dance/Leftfield.jpg';
+import StantonAnt from '@/assets/images/Dance/StantonAntidote.jpg';
+import StantonVir from '@/assets/images/Dance/StantonVirus.jpg';
+import Depeche from '@/assets/images/Dance/Depeche.jpg';
+
 export default {
   name: 'dance',
   components: {
@@ -32,6 +39,48 @@ export default {
     Header,
     Footer,
     Alldance,
+  },
+  data() {
+    return {
+      tracks: [
+        {
+          id: 1,
+          title: 'Aphex Twin',
+          subtitle: 'Windowlicker',
+          img: Aphex,
+        },
+        {
+          id: 2,
+          title: 'Leftfield ',
+          subtitle: 'Leftfield',
+          img: Leftfield,
+        },
+        {
+          id: 3,
+          title: 'Kruder & Dorfmeister',
+          subtitle: 'The K&D sessions',
+          img: KandD,
+        },
+        {
+          id: 4,
+          title: 'Stanton Warriors',
+          subtitle: 'Da Antidote',
+          img: StantonAnt,
+        },
+        {
+          id: 5,
+          title: 'Stanton Warriors',
+          subtitle: 'Da Virus',
+          img: StantonVir,
+        },
+        {
+          id: 6,
+          title: 'Depeche Mode',
+          subtitle: 'Best of',
+          img: Depeche,
+        },
+      ],
+    };
   },
 };
 </script>

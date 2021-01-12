@@ -2,13 +2,15 @@ const express = require('express');
 const db = require('../db');
 const router = express.Router();
 
+import { NotFoundError } from '../robust';
+import Songs from '../models/songs';
+
 //  Get all songs
 
 router.get('/', (req, res) => {
-  db.select('*')
-    .from('songs')
-    .then(result => {
-      res.json(result);
+  Songs.getAll()
+    .then(songs => {
+      res.json(songs);
     })
     .catch(err => res.send(500, err));
 });
@@ -16,27 +18,25 @@ router.get('/', (req, res) => {
 // Get all songs by id
 
 router.get('/:id', (req, res) => {
-  db.select('*')
-    .from('songs')
-    .where('id', req.params.id)
-    .then(result => {
-      if (result.length) {
-        return res.json(result[0]);
-      }
-      res.json(404, { error: 'Artsist not found' });
+  Songs.get(req.params.id)
+    .then(song => {
+      return res.json(song);
     })
-    .catch(err => res.send(500, err));
+    .catch(err => {
+      if (err instanceof NotFoundError) {
+        res.send(404, err);
+      } else {
+        res.send(500, err);
+      }
+    });
 });
 
 // Add a new song
 
 router.post('/', (req, res) => {
-  const newSong = req.body;
-  db('songs')
-    .returning(['*'])
-    .insert(newSong)
-    .then(result => {
-      return res.json(result[0]);
+  Songs.create(req.body)
+    .then(song => {
+      return res.json(song);
     })
     .catch(err => res.send(500, err));
 });
@@ -44,33 +44,33 @@ router.post('/', (req, res) => {
 // Update a song
 
 router.patch('/:id', (req, res) => {
-  db('songs')
-    .returning(['*'])
-    .where('id', req.params.id)
-    .update(req.body)
-    .then(result => {
-      if (result.length) {
-        return res.json(result[0]);
-      }
-      return res.json(404, { error: 'Song not found' });
+  Songs.update(req.params.id, req.body)
+    .then(song => {
+      return res.json(song);
     })
-    .catch(err => res.send(500, err));
+    .catch(err => {
+      if (err instanceof NotFoundError) {
+        res.send(404, err);
+      } else {
+        res.send(500, err);
+      }
+    });
 });
 
 // Delete a song
 
 router.delete('/:id', (req, res) => {
-  db('songs')
-    .returning(['*'])
-    .where('id', req.params.id)
-    .del()
-    .then(result => {
-      if (result.length) {
-        return res.json(result[0]);
-      }
-      return res.json(404, { error: 'Song not found' });
+  Songs.delete(req.params.id)
+    .then(song => {
+      return res.json(song);
     })
-    .catch(err => res.send(500, err));
+    .catch(err => {
+      if (err instanceof NotFoundError) {
+        res.send(404, err);
+      } else {
+        res.send(500, err);
+      }
+    });
 });
 
 module.exports = router;
