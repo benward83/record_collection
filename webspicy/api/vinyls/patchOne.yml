@@ -29,8 +29,8 @@ services:
     - description: |-
         when requested
       params:
-        id: 1
-        name: Safe as Miylk
+        id: 5bcdf5c2-792b-4243-9614-e9fe8a7d74a0
+        name: Safe as Milk
       expected:
         content_type: application/json
         status: 200
@@ -40,8 +40,8 @@ services:
     - description: |-
         when requested for a non-existent vinyl
       params:
-        id: 56789765
-        name: Safe as Miylk
+        id: 00000000-0000-0000-0000-000000000000
+        name: Safe as Milk
       expected:
         content_type: application/json
         status: 404

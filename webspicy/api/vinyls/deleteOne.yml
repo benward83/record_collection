@@ -28,7 +28,7 @@ services:
     - description: |-
         when requested
       params:
-        id: d43fe469-96a8-40ac-8a11-cbc44395a055
+        id: 51e84d60-ffc4-4f4d-b58c-22fc26745f91
       expected:
         content_type: application/json
         status: 200
@@ -38,7 +38,7 @@ services:
     - description: |-
         when requested for an non-existent vinyl
       params:
-        id: 56789765
+        id: 00000000-0000-0000-0000-000000000000
       expected:
         content_type: application/json
         status: 404

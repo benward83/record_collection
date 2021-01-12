@@ -1,9 +1,14 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
-const { v4: uuidv4 } = require('uuid');
 
-uuidv4();
+app.use(bodyParser.json());
+
+app.use((req, res, next) => {
+  res.contentType('application/json');
+  next();
+});
 
 app.use('/artists', require('./routes/artists'));
 app.use('/songs', require('./routes/songs'));

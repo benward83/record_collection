@@ -13,9 +13,7 @@ services:
     Creates a new song
 
   input_schema: |-
-    {
-      name: String
-    }
+    Song.Create
 
   output_schema: |-
     Song
@@ -28,7 +26,10 @@ services:
     - description: |-
         when requested
       params:
-        name: The Number Song
+        name: Get The Funk Out Ma Face
+        track_number: 3
+        side: A
+        vinyl_id: 51e84d60-ffc4-4f4d-b58c-22fc26745f91
       expected:
         content_type: application/json
         status: 200

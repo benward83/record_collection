@@ -4,5 +4,42 @@ Error = {
   error : String
 }
 
-ID = Integer
+UUID = String ( s | s =~ /^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$/i )
 
+ID = UUID
+
+Artist = {
+  id        : ID
+  name      : String
+}
+
+Song = {
+  id              : ID
+  name            : String
+  track_number    : Integer
+  side            : String
+  rating          : Numeric | Nil
+  vinyl_id        : ID
+}
+
+Song.Create = {
+  name            :  String
+  track_number    :  Integer
+  side            :  String
+  rating          :? Numeric | Nil
+  vinyl_id        :  ID
+}
+
+Song.Collection = [Song]
+
+Vinyl = {
+  id               : ID
+  name             : String
+  artist_id        : ID
+  record_label     : String
+  image            : String
+  type             : String
+  quality          : String
+  rating           : Numeric | Nil
+  release_date     : Integer
+}

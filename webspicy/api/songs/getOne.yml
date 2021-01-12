@@ -28,7 +28,7 @@ services:
     - description: |-
         when requested
       params:
-        id: 1
+        id: 496a154d-933e-47d5-b1fc-70ddb86bc7ab
       expected:
         content_type: application/json
         status: 200
@@ -37,7 +37,7 @@ services:
     - description: |-
         when requested for a non-existent song
       params:
-        id: 16656789
+        id: 00000000-0000-0000-0000-000000000000
       expected:
         content_type: application/json
         status: 404

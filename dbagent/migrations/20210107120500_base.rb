@@ -3,14 +3,14 @@ Sequel.migration do
     run <<-SQL
       CREATE EXTENSION "uuid-ossp";
 
+      CREATE TYPE quality AS ENUM ('M', 'NM', 'E', 'VG', 'G', 'F', 'P');
+      CREATE TYPE vinyltype AS ENUM ('EP', 'LP', 'SINGLE');
+      CREATE TYPE vinylside AS ENUM ('A', 'B');
+
       CREATE TABLE artists (
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
         name VARCHAR NOT NULL
       );
-
-      CREATE TYPE quality AS ENUM ('M', 'NM', 'E', 'VG', 'G', 'F', 'P');
-      CREATE TYPE vinyltype AS ENUM ('EP', 'LP', 'SINGLE');
-      CREATE TYPE vinylside AS ENUM ('A', 'B');
 
       CREATE TABLE vinyls (
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -26,7 +26,7 @@ Sequel.migration do
 
       CREATE TABLE songs (
         id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-        vinyl_id UUID REFERENCES vinyls (id),
+        vinyl_id UUID REFERENCES vinyls (id) ON DELETE CASCADE,
         name VARCHAR NOT NULL,
         track_number INTEGER,
         side vinylside NOT NULL,
@@ -41,26 +41,26 @@ Sequel.migration do
 
       CREATE TABLE songs_genres (
         genre_id UUID REFERENCES genres (id),
-        song_id UUID REFERENCES songs (id),
+        song_id UUID REFERENCES songs (id) ON DELETE CASCADE,
         PRIMARY KEY (genre_id, song_id)
       );
 
       CREATE TABLE vinyls_genres (
         genre_id UUID REFERENCES genres (id),
-        album_id UUID REFERENCES vinyls (id),
-        PRIMARY KEY (genre_id, album_id)
+        vinyl_id UUID REFERENCES vinyls (id) ON DELETE CASCADE,
+        PRIMARY KEY (genre_id, vinyl_id)
       );
 
       CREATE TABLE songs_feature_artists (
         artist_id UUID REFERENCES artists (id),
-        song_id UUID REFERENCES songs (id),
+        song_id UUID REFERENCES songs (id) ON DELETE CASCADE,
         PRIMARY KEY (artist_id, song_id)
       );
 
       CREATE TABLE vinyls_feature_artists (
         artist_id UUID REFERENCES artists (id),
-        album_id UUID REFERENCES vinyls (id),
-        PRIMARY KEY (artist_id, album_id)
+        vinyl_id UUID REFERENCES vinyls (id) ON DELETE CASCADE,
+        PRIMARY KEY (artist_id, vinyl_id)
       );
 
     SQL

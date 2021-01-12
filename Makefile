@@ -209,7 +209,7 @@ db.create:
 ###
 
 api.test: webspicy.on
-	docker-compose run -T webspicy webspicy config.rb
+	docker-compose exec -T webspicy webspicy config.rb
 
 api.tdd: api.on
 	docker-compose exec -T api npm run test:watch

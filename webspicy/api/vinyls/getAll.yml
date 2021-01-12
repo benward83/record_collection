@@ -18,7 +18,7 @@ services:
     }
 
   output_schema: |-
-    [Vinyls]
+    [Vinyl]
 
   error_schema: |-
     Error

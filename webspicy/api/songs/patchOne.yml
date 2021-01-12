@@ -29,8 +29,8 @@ services:
     - description: |-
         when requested
       params:
-        id: 1
-        name: Tears of a Clowyn
+        id: e8fa2ea5-153c-4888-9ae7-06c14160e55c
+        name: Low Key
       expected:
         content_type: application/json
         status: 200
@@ -40,8 +40,8 @@ services:
     - description: |-
         when requested for a non-existent song
       params:
-        id: 56789765
-        name: Tears of a Clowyn
+        id: 00000000-0000-0000-0000-000000000000
+        name: Low Key
       expected:
         content_type: application/json
         status: 404

@@ -10,7 +10,7 @@ services:
     PATCH
 
   description: |-
-    Update an existing ingredient
+    Update an existing artist
 
   input_schema: |-
     {
@@ -29,8 +29,8 @@ services:
     - description: |-
         when requested
       params:
-        id: 1
-        name: Myles Davis
+        id: b74874d9-986a-484c-9b1e-ec58202d7465
+        name: Geaorge Benson
       expected:
         content_type: application/json
         status: 200
@@ -38,10 +38,10 @@ services:
   counterexamples:
 
     - description: |-
-        when requested for a non-existent ingredient
+        when requested for a non-existent artist
       params:
-        id: 56789765
-        name: Myles Davis
+        id: 00000000-0000-0000-0000-000000000000
+        name: George Benson
       expected:
         content_type: application/json
         status: 404

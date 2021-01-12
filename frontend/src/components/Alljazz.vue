@@ -1,43 +1,27 @@
 <template>
   <b-container id="all-jazz">
-      <b-row>
+      <b-row v-for='track in tracks' :key=track.id>
         <b-col>
-          <b-card
-            title="Miles Davis"
-            sub-title="Blue Period"
-            @mouseover="hover = true"
-            @mouseleave="hover = false"
-            :class="{active: hover}"
-          >
-            <b-card-img
-                :src='require("../assets/images/Jazz/Miles.jpg")'
-                alt="Image"
-                class="rounded-0"
-                >
-              </b-card-img>
-                <b-card-text>
-                  Some info here
-                </b-card-text>
-          </b-card>
+          <Card />
         </b-col>
         <b-col>
-          <b-card
-            title="Nina Simone"
-            sub-title="Nina Simone"
-            @mouseover="hover = true"
-            @mouseleave="hover = false"
-            :class="{active: hover}"
-          >
-            <b-card-img
-                :src='require("../assets/images/Jazz/Nina.jpg")'
-                alt="Image"
-                class="rounded-0"
-                >
+            <b-card
+              title="Nina Simone"
+              sub-title="Nina Simone"
+              @mouseover="hover = true"
+              @mouseleave="hover = false"
+              :class="{active: hover}"
+            >
+              <b-card-img
+                  :src='require("../assets/images/Jazz/Nina.jpg")'
+                  alt="Image"
+                  class="rounded-0"
+                  >
               </b-card-img>
                 <b-card-text>
                   Some info here
                 </b-card-text>
-          </b-card>
+            </b-card>
         </b-col>
         <b-col>
           <b-card
@@ -123,7 +107,15 @@
 </template>
 
 <script>
+
+import Card from '@/components/Card.vue';
+
 export default {
+  name: 'Alljazz',
+  components: {
+    Card,
+  },
+  props: ['tracks'],
   data() {
     return {
       hover: false,

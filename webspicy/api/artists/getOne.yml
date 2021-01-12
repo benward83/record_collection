@@ -18,7 +18,7 @@ services:
     }
 
   output_schema: |-
-    Ingredient
+    Artist
 
   error_schema: |-
     Error
@@ -28,7 +28,7 @@ services:
     - description: |-
         when requested
       params:
-        id: 1
+        id: ae5ce156-967f-40af-bae2-20004c047380
       expected:
         content_type: application/json
         status: 200
@@ -37,7 +37,7 @@ services:
     - description: |-
         when requested for a non-existent artist
       params:
-        id: 16656789
+        id: 00000000-0000-0000-0000-000000000000
       expected:
         content_type: application/json
         status: 404

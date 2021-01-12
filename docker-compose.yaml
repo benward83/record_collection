@@ -19,6 +19,8 @@ services:
     environment:
       LOG_LEVEL: DEBUG
     image: recc/webspicy
+    entrypoint: tail
+    command: ["-f", "/dev/null"]
     volumes:
       - ./webspicy/config.rb:/webspicy/config.rb
       - ./webspicy/schema.fio:/webspicy/schema.fio

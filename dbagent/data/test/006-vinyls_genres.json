@@ -1,26 +1,26 @@
 [
   {
     "genre_id": "7ccc97fc-8f39-46ef-a589-3d59e134ef97",
-    "album_id": "51e84d60-ffc4-4f4d-b58c-22fc26745f91"
+    "vinyl_id": "51e84d60-ffc4-4f4d-b58c-22fc26745f91"
   },
   {
     "genre_id": "b76ab3fa-faf7-413a-b602-54e06b6a27f4",
-    "album_id": "4f1b992d-4347-4622-b1af-e9fffc375146"
+    "vinyl_id": "4f1b992d-4347-4622-b1af-e9fffc375146"
   },
   {
     "genre_id": "7ccc97fc-8f39-46ef-a589-3d59e134ef97",
-    "album_id": "39c0442c-1d45-45fe-845e-6f5e1d5c112d"
+    "vinyl_id": "39c0442c-1d45-45fe-845e-6f5e1d5c112d"
   },
   {
     "genre_id": "b76ab3fa-faf7-413a-b602-54e06b6a27f4",
-    "album_id": "cdce9e15-5db5-4ca7-bdbb-149524079485"
+    "vinyl_id": "cdce9e15-5db5-4ca7-bdbb-149524079485"
   },
   {
     "genre_id": "274a3bf3-92dd-40b1-9627-cf704d2a64df",
-    "album_id": "5bcdf5c2-792b-4243-9614-e9fe8a7d74a0"
+    "vinyl_id": "5bcdf5c2-792b-4243-9614-e9fe8a7d74a0"
   },
   {
     "genre_id": "274a3bf3-92dd-40b1-9627-cf704d2a64df",
-    "album_id": "46a5c804-871b-4a55-a3ac-c89bf68c5a55"
+    "vinyl_id": "46a5c804-871b-4a55-a3ac-c89bf68c5a55"
   }
 ]

@@ -23,12 +23,15 @@ services:
   error_schema: |-
     Error
 
+  preconditions:
+    - The artist has no vinyls in the collection
+
   examples:
 
     - description: |-
         when requested
       params:
-        id: ae5ce156-967f-40af-bae2-20004c047380
+        id: e6c2dec6-7822-4207-986e-91e5ac58e127
       expected:
         content_type: application/json
         status: 200
@@ -38,7 +41,7 @@ services:
     - description: |-
         when requested for an non-existent artist
       params:
-        id: 56789765
+        id: 00000000-0000-0000-0000-000000000000
       expected:
         content_type: application/json
         status: 404
