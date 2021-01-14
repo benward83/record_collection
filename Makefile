@@ -1,6 +1,6 @@
 SHELL=/bin/bash -o pipefail
 COMPONENTS := api frontend dbagent gateway webspicy
-UP_COMPONENTS := gateway dbagent
+UP_COMPONENTS := gateway dbagent webspicy
 
 ################################################################################
 ### Config variables
@@ -73,7 +73,7 @@ purge:
 # Restarts the whole software, without rebuilding images.
 #
 # Handy to get started hacking without waiting too much.
-restart: gateway.restart
+restart: $(addsuffix .restart,$(UP_COMPONENTS))
 
 ################################################################################
 # Automatic generation of the standard rules
