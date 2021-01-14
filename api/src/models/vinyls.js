@@ -25,9 +25,15 @@ class Vinyls extends Model {
   }
 
   static get(id) {
-    return db.select('*')
+    const songs = db.raw(`
+      SELECT json_agg(songs)
+      FROM songs
+      WHERE songs.vinyl_id = vinyls.id
+    `).wrap('(', ') songs');
+
+    return db.select('*', songs)
       .from('vinyls')
-      .where('id', id)
+      .where('vinyls.id', id)
       .then(rows => {
         if (rows.length) {
           return rows[0];

@@ -86,5 +86,15 @@
     "type": "LP",
     "quality": "VG",
     "rating": 4
+  }, {
+    "id": "1fcd331b-9cbe-49ac-98d2-d947e1b55689",
+    "artist_id": "50009d16-bdf7-437f-b7e7-9c79e8d00d0b",
+    "name": "Crash Pickup & Ride",
+    "release_date": 2018,
+    "record_label": "Cadenza",
+    "image": "",
+    "type": "LP",
+    "quality": "M",
+    "rating": 1
   }
 ]

@@ -33,5 +33,19 @@
     "name": "Low Key",
     "track_number": 16,
     "side": "B"
+  },
+  {
+    "id": "d0895e2e-f3ac-407c-b2e0-22badfebb13b",
+    "vinyl_id": "1fcd331b-9cbe-49ac-98d2-d947e1b55689",
+    "name": "Track a",
+    "track_number": 1,
+    "side": "A"
+  },
+  {
+    "id": "55e79337-2c81-4102-bd42-753eb01717be",
+    "vinyl_id": "1fcd331b-9cbe-49ac-98d2-d947e1b55689",
+    "name": "Track b",
+    "track_number": 2,
+    "side": "A"
   }
 ]

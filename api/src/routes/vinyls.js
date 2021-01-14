@@ -24,6 +24,7 @@ router.get('/:id', (req, res) => {
       return res.json(vinyl);
     })
     .catch(err => {
+      console.log(err);
       if (err instanceof NotFoundError) {
         res.send(404, err);
       } else {
