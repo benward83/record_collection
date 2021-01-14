@@ -24,11 +24,10 @@ router.get('/:id', (req, res) => {
       return res.json(vinyl);
     })
     .catch(err => {
-      console.log(err);
       if (err instanceof NotFoundError) {
-        res.send(404, err);
+        res.status(404).send(err);
       } else {
-        res.send(500, err);
+        res.status(500).send(err);
       }
     });
 });

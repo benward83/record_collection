@@ -31,9 +31,21 @@ class Vinyls extends Model {
       WHERE songs.vinyl_id = vinyls.id
     `).wrap('(', ') songs');
 
-    return db.select('*', songs)
+    const genres = db.raw(`
+      SELECT v.*, json_agg(songs), json_agg(genres)
+      FROM vinyls
+      LEFT JOIN songs
+      ON vinyls.id = songs.vinyl_id
+      LEFT JOIN vinyls_genres
+      ON vinyls.id = vinyls_genres.vinyl_id
+      LEFT JOIN genres
+      ON vinyls_genres.genre_id = genres.id
+    `).wrap('(', ') genres');
+
+    return db.select('*', songs, genres)
       .from('vinyls')
       .where('vinyls.id', id)
+      .groupBy('vinyls.id')
       .then(rows => {
         if (rows.length) {
           return rows[0];
