@@ -1,0 +1,45 @@
+---
+name: |-
+  Get a vinyl's songs
+
+url: |-
+  /vinyls/{id}/songs
+
+services:
+- method: |-
+    GET
+
+  description: |-
+    Returns the list of songs for that specific vinyl
+
+  input_schema: |-
+    {
+      id: ID
+    }
+
+  output_schema: |-
+    Song.Collection
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested for an existing album
+      params:
+        id: 51e84d60-ffc4-4f4d-b58c-22fc26745f91
+      expected:
+        content_type: application/json
+        status: 200
+      assert:
+        - notEmpty
+
+  counterexamples:
+    - description: |-
+        when requested for a non-existent vinyl
+      params:
+        id: 00000000-0000-0000-0000-000000000000
+      expected:
+        content_type: application/json
+        status: 404

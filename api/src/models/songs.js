@@ -1,6 +1,7 @@
 import Model from './model';
 import db from '../db';
 import { NotFoundError } from '../robust';
+import Vinyls from './vinyls';
 
 class Songs extends Model {
 
@@ -39,6 +40,15 @@ class Songs extends Model {
   static getAll() {
     return db.select('*')
       .from('songs');
+  }
+
+  static getAllSongsForVinyl(vinylId) {
+    return Vinyls.get(vinylId)
+      .then(() => {
+        return db.select('*')
+          .from('songs')
+          .where('vinyl_id', vinylId);
+      });
   }
 
   static update(id, data) {

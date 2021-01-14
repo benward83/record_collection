@@ -4,6 +4,7 @@ const router = express.Router();
 
 import { NotFoundError } from '../robust';
 import Vinyls from '../models/vinyls';
+import Songs from '../models/songs';
 
 //  Get all vinyls
 
@@ -21,6 +22,22 @@ router.get('/:id', (req, res) => {
   Vinyls.get(req.params.id)
     .then(vinyl => {
       return res.json(vinyl);
+    })
+    .catch(err => {
+      if (err instanceof NotFoundError) {
+        res.send(404, err);
+      } else {
+        res.send(500, err);
+      }
+    });
+});
+
+// Get vinyls and their related songs
+
+router.get('/:id/songs', (req, res) => {
+  Songs.getAllSongsForVinyl(req.params.id)
+    .then(songs => {
+      return res.json(songs);
     })
     .catch(err => {
       if (err instanceof NotFoundError) {
