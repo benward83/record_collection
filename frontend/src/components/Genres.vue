@@ -58,4 +58,5 @@ export default {
 .img-fluid {
   border-block-color: black;
 }
+
 </style>

@@ -82,6 +82,11 @@ export default {
       ],
     };
   },
+  // computed: {
+  //   chunkedTracks() {
+  //     return chunk(this.tracks, 3);
+  //   },
+  // },
 };
 </script>
 

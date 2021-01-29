@@ -1,8 +1,10 @@
 <template>
   <b-container id="all-jazz">
-      <b-card-group deck>
-        <Card v-for='track in tracks' :key=track.id :track="track"/>
-      </b-card-group>
+      <div>
+        <b-card-group class="card-deck">
+          <Card v-for='track in tracks' :key=track.id :track="track"/>
+        </b-card-group>
+      </div>
   </b-container>
 </template>
 

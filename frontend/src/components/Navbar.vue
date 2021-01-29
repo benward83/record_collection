@@ -17,6 +17,8 @@
 
           <b-nav-item href="/7inch">7" singles</b-nav-item>
 
+          <b-nav-item href="/Form">Add Record</b-nav-item>
+
           <!-- Add beats feature at a later date oce rest of the app is up and running -->
           <!-- <b-nav-item href="/beats">Beats</b-nav-item> -->
 

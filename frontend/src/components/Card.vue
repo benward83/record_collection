@@ -38,7 +38,7 @@ export default {
   font-family: 'Ubuntu', sans-serif;
 }
 .container {
-  max-width: 500px;
+  max-width: 400px;
 }
 .active:hover {
   transition: transform .5s ease-in;

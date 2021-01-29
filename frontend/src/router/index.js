@@ -58,6 +58,11 @@ const routes = [
     name: 'World',
     component: () => import('../views/World.vue'),
   },
+  {
+    path: '/form',
+    name: 'Form',
+    component: () => import('../views/Form.vue'),
+  },
 ];
 
 const router = new VueRouter({
