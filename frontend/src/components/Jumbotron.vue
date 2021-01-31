@@ -21,28 +21,3 @@ export default {
 
 };
 </script>
-
-<style scoped>
-
-  .jumbotron {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: url('../assets/images/Crates.jpg');
-  background-position: 50% 55%;
-  background-size: cover;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 5px 5px 5px 5px;
-  }
-
-  .text {
-    font-family: 'Ubuntu', sans-serif;
-    color: black;
-  }
-
-  .p-text {
-    font-size: medium;
-    color: cornsilk;
-  }
-</style>

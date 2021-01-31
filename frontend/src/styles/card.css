@@ -1,0 +1,11 @@
+#card {
+  font-family: 'Ubuntu', sans-serif;
+}
+.card-container {
+  max-width: 400px;
+}
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
+}

@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 
-#all-dance {
+#all-hiphop {
   font-family: 'Ubuntu', sans-serif;
 }
 </style>

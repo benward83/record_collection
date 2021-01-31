@@ -15,21 +15,3 @@ export default {
 
 };
 </script>
-
-<style>
-
-#input-default {
-  max-width: 500px;
-  align-items: center;
-  justify-content: center;
-}
-
-.search {
-max-width: 1000px;
-display: block;
-margin: auto;
-width: 25%;
-border-color: #1d1d1d;
-}
-
-</style>

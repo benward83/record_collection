@@ -1,5 +1,5 @@
 <template id="card">
-  <div class="container">
+  <div class="card-container">
     <b-card
       :title="track.title"
       :sub-title="track.subtitle"
@@ -32,17 +32,3 @@ export default {
   },
 };
 </script>
-
-<style>
-#card {
-  font-family: 'Ubuntu', sans-serif;
-}
-.container {
-  max-width: 400px;
-}
-.active:hover {
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-out;
-  transform: scale(1.1);
-}
-</style>
