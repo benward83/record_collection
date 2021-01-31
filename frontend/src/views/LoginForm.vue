@@ -1,7 +1,7 @@
 <template>
   <div id="login-form">
     <Navbar />
-    <LoginModal />
+    <LoginModal ref="modal"/>
   </div>
 </template>
 

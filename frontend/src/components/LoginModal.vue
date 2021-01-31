@@ -6,7 +6,7 @@
       <div class="login-modal">
         <div class="modal-header">
           <button
-          v-if="!isLoginForm"
+            v-if="!isLoginForm"
             class="btn-back"
             @click="returnToLogin()"
           >
@@ -68,39 +68,39 @@
         </form>
 
         <!-- Form 2: Password forgotten form -->
-      <form
-        v-else
-        method="post"
-        @submit.prevent="sendInstructions"
-      >
-        <div class="modal-body">
-          <div class="form-group">
-            <input
-              ref="emailInput"
-              v-model="email"
-              type="email"
-              required
-              class="form-control"
-              placeholder="Your email...;"
-            >
+        <form
+          v-else
+          method="post"
+          @submit.prevent="sendInstructions"
+        >
+          <div class="modal-body">
+            <div class="form-group">
+              <input
+                ref="emailInput"
+                v-model="email"
+                type="email"
+                required
+                class="form-control"
+                placeholder="Your email..."
+              >
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="submit"
-            class="btn-big btn-success"
-          >
-            Send instructions
-          </button>
-          <button
-            type="button"
-            class="btn-big btn-discrete"
-            @click="returnToLogin()"
-          >
-            Back to login
-          </button>
-        </div>
-      </form>
+          <div class="modal-footer">
+            <button
+              type="submit"
+              class="btn-big btn-success"
+            >
+              Send instructions
+            </button>
+            <button
+              type="button"
+              class="btn-big btn-discrete"
+              @click="returnToLogin()"
+            >
+              Back to login
+            </button>
+          </div>
+        </form>
     </div>
   </div>
 </template>
@@ -121,7 +121,7 @@ export default {
   props: {
     visible: {
       type: Boolean,
-      default: false,
+      default: true,
     },
   },
   data: () => ({
@@ -148,16 +148,16 @@ export default {
       this.isVisible = true;
       this.focusOnInput();
     },
-    login() {
-      // LoginService.login(this.username, this.password)
-      //   .catch((err) => {
-      //     if (err instanceof MiniKlaroError) {
-      //       this.errorMessage = err.message;
-      //     } else {
-      //       this.errorMessage = 'Something wrong happened, please try or contact us.';
-      //     }
-      //   });
-    },
+    // login() {
+    //   LoginService.login(this.username, this.password)
+    //     .catch((err) => {
+    //       if (err instanceof Error) {
+    //         this.errorMessage = err.message;
+    //       } else {
+    //         this.errorMessage = 'Something wrong happened, please try or contact us.';
+    //       }
+    //     });
+    // },
     sendInstructions() {
       // LoginService.passwordForgotten(this.username);
     },
