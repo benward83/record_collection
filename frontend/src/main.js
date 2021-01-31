@@ -4,6 +4,8 @@ import _lodash from 'lodash';
 import App from './App.vue';
 import router from './router';
 
+import './styles/main.css';
+
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);

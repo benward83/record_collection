@@ -1,0 +1,227 @@
+
+/* // Login Modal */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: grey;
+  opacity: 0.6;
+}
+
+.login-modal {
+  margin-top: 0em;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 1.42857143;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 342px;
+  margin-left: -160px;
+  margin-top: -171px;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding: 14px 40px;
+  color: #424242;
+  border-radius: 15px 15px 0 0;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.modal-header h2 {
+  font-size: 16px;
+  line-height: 1.38;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.modal-body {
+  position: relative;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  background-clip: border-box;
+  }
+
+.form-group {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 10px 0;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.form-control {
+  font-family: 'Nunito', sans-serif;
+  padding: 9.5px 9.5px;
+  height: auto;
+  border-radius: 5px 5px 5px 5px;
+  border: .5px solid rgba(189, 189, 189, 0.3);
+  color: #757575;
+  box-shadow: none;
+  width: 80%;
+}
+
+#modal-input {
+    font-family: 'Nunito', sans-serif;
+    padding: 9.5px 9.5px;
+    height: auto;
+    border-radius: 5px 5px 5px 5px;
+    border: .5px solid rgba(189, 189, 189, 0.3);
+    color: #757575;
+    box-shadow: none;
+    width: 80%;
+}
+
+.form-control:hover {
+  background-color: #fafafa
+}
+
+.modal-footer {
+  margin-top: auto;
+  border: none;
+  padding: 0 30px 30px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.modal-footer .btn-big+.btn-big {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+.btn-big.btn-success,
+.btn-big-large.btn-success,
+.btn-big.btn-danger,
+.btn-big-large.btn-danger,
+.btn-big.btn-discrete,
+.btn-big-large.btn-discrete,
+.btn-big.btn-discrete[disabled],
+.btn-big-large,
+.btn-discrete[disabled] {
+  letter-spacing: 0.5px;
+}
+
+.btn-big {
+  font-size: 14px;
+  line-height: 1.43;
+  font-style: normal;
+  font-stretch: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-success, .btn-success:active {
+  font-weight: 700;
+  border: 1px solid #7505f9;
+  background: #7505f9;
+  color: white;
+}
+
+.btn-big, .btn-big-large {
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 4px 20px;
+}
+
+.btn-success {
+  font-weight: 700;
+  border: 1px solid #7505f9;
+  background: #7505f9;
+  color: white;
+
+}
+
+.btn-discrete,
+.btn-discrete:active,
+.btn-discrete:focus {
+  font-weight: 400;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #7505f9;
+}
+
+.btn-discrete:hover {
+  border: 1px solid #7505f9;
+}
+
+input[type='text']:hover {
+  -moz-box-shadow: 0px 0px 4px #1c9ef5;
+  -webkit-box-shadow: 0px 0px 4px #1c9ef5;
+  box-shadow: 0px 0px 4px #1c9ef5;
+}
+
+input[type='password']:hover {
+  -moz-box-shadow: 0px 0px 4px #1c9ef5;
+  -webkit-box-shadow: 0px 0px 4px #1c9ef5;
+  box-shadow: 0px 0px 4px #1c9ef5;
+}
+
+input[type='email']:focus {
+  -moz-box-shadow: 0px 0px 4px #1c9ef5;
+  -webkit-box-shadow: 0px 0px 4px #1c9ef5;
+  box-shadow: 0px 0px 4px #1c9ef5;
+}
+
+
+
+
+// Login Button
+
+.login-btn-cmp {
+  max-width: 250px;
+}
+
+.btn-big {
+  font-size: 14px;
+  line-height: 1.43;
+  font-style: normal;
+  font-stretch: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 40px;
+  padding: 4px 20px;
+}
+
+.btn-success, .btn-success:active {
+  font-weight: 700;
+  border: 1px solid #7505f9;
+  background: #7505f9;
+  color: white;
+}
+
+.btn-success {
+  font-weight: 700;
+  border: 1px solid #7505f9;
+  background: #7505f9;
+  color: white;
+
+}
+

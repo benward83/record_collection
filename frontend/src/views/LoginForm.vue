@@ -1,19 +1,19 @@
 <template>
-  <div id="form">
+  <div id="login-form">
     <Navbar />
-    <Form />
+    <LoginModal />
   </div>
 </template>
 
 <script>
 
-import Form from '@/components/Form.vue';
+import LoginModal from '@/components/LoginModal.vue';
 import Navbar from '@/components/Navbar.vue';
 
 export default {
-  name: 'form',
+  name: 'login-form',
   components: {
-    Form,
+    LoginModal,
     Navbar,
   },
 

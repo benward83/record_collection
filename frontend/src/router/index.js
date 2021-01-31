@@ -59,9 +59,9 @@ const routes = [
     component: () => import('../views/World.vue'),
   },
   {
-    path: '/form',
-    name: 'Form',
-    component: () => import('../views/Form.vue'),
+    path: '/loginform',
+    name: 'LoginForm',
+    component: () => import('../views/LoginForm.vue'),
   },
 ];
 
