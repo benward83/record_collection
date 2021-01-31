@@ -5,13 +5,6 @@
         <!-- Modal -->
       <div class="login-modal">
         <div class="modal-header">
-          <button
-            v-if="!isLoginForm"
-            class="btn-back"
-            @click="returnToLogin()"
-          >
-            back to login
-          </button>
           <h2 id="modal-header-text">
             {{ title }}
           </h2>
@@ -52,7 +45,7 @@
           <div class="modal-footer">
             <button
               type="submit"
-              class="btn-big btn-success"
+              class="btn-big btn-main"
               @click="login()"
             >
               Login
@@ -88,16 +81,16 @@
           <div class="modal-footer">
             <button
               type="submit"
-              class="btn-big btn-success"
+              class="btn-big btn-main"
             >
               Send instructions
             </button>
             <button
               type="button"
               class="btn-big btn-discrete"
-              @click="returnToLogin()"
+              @click="$router.push('/')"
             >
-              Back to login
+              Back to homepage
             </button>
           </div>
         </form>
@@ -176,7 +169,7 @@ export default {
       this.mode = MODES.forgotten;
       this.focusOnInput();
     },
-    returnToLogin() {
+    returnHome() {
       this.mode = MODES.login;
       this.focusOnInput();
     },
