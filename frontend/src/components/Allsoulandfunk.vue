@@ -10,6 +10,7 @@
           class="mb-2"
         >
           <b-card
+            class="card"
             :title="track.title"
             :sub-title="track.subtitle"
             :key="track.id"

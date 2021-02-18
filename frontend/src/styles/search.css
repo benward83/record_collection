@@ -11,3 +11,9 @@ margin: auto;
 width: 25%;
 border-color: #1d1d1d;
 }
+
+p {
+  font-size: 20px;
+  white-space: nowrap;
+  font-family: 'Ubuntu', sans-serif;
+}

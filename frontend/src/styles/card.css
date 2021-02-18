@@ -9,3 +9,8 @@
   transition: transform .5s ease-out;
   transform: scale(1.1);
 }
+
+.card {
+  background-color: #f9ecec;
+}
+
