@@ -9,7 +9,7 @@
     <Search />
     <br>
     <br>
-    <Allsoulandfunk :tracks="tracks"/>
+    <Allsoulandfunk/>
     <br>
     <br>
     <Footer />
