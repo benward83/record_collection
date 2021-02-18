@@ -1,5 +1,5 @@
 <template>
-  <div id="12-inch">
+  <div id="twelve-inch">
     <Navbar />
     <br>
     <br>
@@ -106,3 +106,11 @@ export default {
 
 };
 </script>
+
+<style>
+
+#twelve-inch {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+</style>

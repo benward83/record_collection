@@ -2,7 +2,6 @@
   font-family: 'Ubuntu', sans-serif;
 }
 .card-container {
-  max-width: 400px;
 }
 .active:hover {
   transition: transform .5s ease-in;

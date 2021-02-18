@@ -1,5 +1,5 @@
 <template>
-  <div id="7-inch">
+  <div id="seven-inch">
     <Navbar />
     <br>
     <br>
@@ -109,4 +109,8 @@ export default {
 
 <style>
 
+#seven-inch {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
 </style>

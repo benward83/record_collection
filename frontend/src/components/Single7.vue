@@ -1,5 +1,5 @@
 <template>
-   <b-container fluid id="single7">
+   <b-container id="single7">
       <b-row cols="1" cols-sm="2" cols-md="3" cols-lg="4">
         <b-col
           v-for='track in tracks'

@@ -29,5 +29,8 @@ export default {
 </script>
 
 <style>
-
+#beats {
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
 </style>

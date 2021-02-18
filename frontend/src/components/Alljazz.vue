@@ -1,5 +1,5 @@
 <template>
-  <b-container id="all-jazz">
+  <b-container class="card-container">
      <b-row cols="1" cols-sm="2" cols-md="3" cols-lg="4">
         <b-col
           v-for='track in tracks'
