@@ -53,6 +53,7 @@ export default {
 <style scoped>
 .container-fluid {
   max-width: 300px;
+
 }
 
 .img-fluid {

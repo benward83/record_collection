@@ -57,8 +57,8 @@ export default {
   color: black;
 }
 .active:hover {
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-out;
+  transition: transform .7s ease-in;
+  transition: transform .7s ease-out;
   transform: scale(1.1);
 }
 </style>
