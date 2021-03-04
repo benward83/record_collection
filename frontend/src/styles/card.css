@@ -3,15 +3,17 @@
 }
 .card-container {
 }
-.active:hover {
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-out;
-  transform: scale(1.1);
-}
+
 
 .card {
   background-color: #fdfdfd;
   border-color: black;
+}
+
+.active:hover {
+  transition: transform .5s ease-in;
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
 }
 
 

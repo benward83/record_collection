@@ -1,20 +1,23 @@
 <template>
   <div id="login-form">
     <Navbar />
-    <LoginModal ref="modal"/>
+    <!-- <LoginModal ref="modal"/> -->
+    <AddRecordForm />
   </div>
 </template>
 
 <script>
 
-import LoginModal from '@/components/LoginModal.vue';
 import Navbar from '@/components/Navbar.vue';
+// import LoginModal from '@/components/LoginModal.vue';
+import AddRecordForm from '@/components/AddRecordForm.vue';
 
 export default {
   name: 'login-form',
   components: {
-    LoginModal,
     Navbar,
+    // LoginModal,
+    AddRecordForm,
   },
 
 };
