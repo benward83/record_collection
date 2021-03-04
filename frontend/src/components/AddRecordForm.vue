@@ -6,7 +6,7 @@
           class="form-control"
           action=""
         >
-        <h1>Add a record</h1>
+        <h4>Add a record</h4>
         <div class="form-input">
           <b-form-input class="mt-3" v-model="text" placeholder="Artist"></b-form-input>
         </div>
@@ -21,9 +21,7 @@
         </div>
         <div class="dropdown mt-5">
           <b-form-select v-model="selected" :options="options"></b-form-select>
-          <div class="mt-5">
-            Year: <strong>{{ selected }}</strong>
-          </div>
+         <!-- radio btns -->
         </div>
         <div class="rating mt-5">
           <p>Please rate this record</p>
@@ -69,15 +67,18 @@ export default {
     background: url('../assets/images/background.jpg');
     background-position: 50% 55%;
     background-size: cover;
+    opacity: .8;
   }
 
-  container {
-    padding: auto, auto;
+  .container {
+    padding: 10px, 10px;
     justify-content: center;
     border-radius: 18px 18px 18px 18px;
+    max-width: 600px;
+    height: 30%;
   }
 
-  h1 {
+  h4 {
     text-align: center;
     color: rgb(95, 0, 0);;
   }

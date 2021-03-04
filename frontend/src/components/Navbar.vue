@@ -37,6 +37,12 @@ export default {
       loginModal: false,
     };
   },
+  props: {
+    addRecord: {
+      type: Boolean,
+      default: true,
+    },
+  },
   methods: {
     openModal() {
       this.$refs.modal.open();

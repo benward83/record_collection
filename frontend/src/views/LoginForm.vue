@@ -1,6 +1,8 @@
 <template>
   <div id="login-form">
-    <Navbar />
+    <Navbar
+      v-if="!addRecord"
+    />
     <!-- <LoginModal ref="modal"/> -->
     <AddRecordForm />
   </div>
@@ -18,6 +20,11 @@ export default {
     Navbar,
     // LoginModal,
     AddRecordForm,
+  },
+  data() {
+    return {
+      addRecord: true,
+    };
   },
 
 };
