@@ -32,6 +32,10 @@
           >
           </b-form-rating>
         </div>
+        <div class="form-btns">
+          <b-button variant="danger">Button</b-button>
+          <b-button variant="success">Button</b-button>
+        </div>
       </form>
     </div>
 </div>
@@ -81,5 +85,10 @@ export default {
   h4 {
     text-align: center;
     color: rgb(95, 0, 0);;
+  }
+
+  button {
+    margin: 10px 10 px;
+    padding: 10px 10 px;
   }
 </style>
