@@ -32,9 +32,9 @@
           >
           </b-form-rating>
         </div>
-        <div class="form-btns">
-          <b-button variant="danger">Button</b-button>
-          <b-button variant="success">Button</b-button>
+        <div class="form-btns mt-3">
+          <b-button class="cancel" variant="danger">Cancel</b-button>
+          <b-button class="submit" variant="success">Submit</b-button>
         </div>
       </form>
     </div>
@@ -87,8 +87,19 @@ export default {
     color: rgb(95, 0, 0);;
   }
 
-  button {
-    margin: 10px 10 px;
-    padding: 10px 10 px;
+  .form-btns {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: inline-block;
+  }
+
+  .cancel {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .submit {
+    float: right;
+    margin-left: 15px;
   }
 </style>
