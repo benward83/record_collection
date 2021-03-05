@@ -150,58 +150,6 @@ export default {
 };
 </script>
 
-<style scoped>
-
-.form-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("../assets/images/background.jpg");
-  background-position: 50% 55%;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-.container {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  border-radius: 20px 20px 20px 20px;
-  max-width: 40%;
-  padding-top: 5%;
-}
-
-.form-control {
-  display: inline-block;
-  margin: auto auto;
-  background-color: white;
-}
-
-.form-btns {
-  margin: 10px 10px;
-  padding: 10px 10px;
-  display: inline-block;
-}
-
-.form-title {
-  text-align: center;
-  color: rgb(95, 0, 0);
-  padding: 10px 10px
-}
-.form-text {
-  color: black
-}
-
-.cancel {
-  float: left;
-  margin-right: 15px;
-}
-
-.submit {
-  float: right;
-  margin-left: 15px;
-}
+<style>
 
 </style>
