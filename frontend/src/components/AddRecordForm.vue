@@ -1,41 +1,49 @@
 <template>
   <div class="form-background">
     <div class="container mt-3">
-      <form @submit.prevent="submit" class="form-control" action="">
-        <h4 class="form-title">Add a record</h4>
+      <form @submit.prevent="submit" class="form-control" action="submit">
+        <h2 class="form-title">Add a record</h2>
+
+        <!-- inputs -->
+
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="text"
+            v-model="artist"
             placeholder="Artist"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="text"
+            v-model="album"
             placeholder="Album name"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="text"
+            v-model="track"
             placeholder="Track name"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="text"
+            v-model="recordLabel"
             placeholder="Record label"
           ></b-form-input>
         </div>
-        <div class="dropdown mt-3">
+
+        <!-- dropdown -->
+
+        <div class="form-dropdown mt-3">
           <b-form-select v-model="selected" :options="options"></b-form-select>
+
           <!-- radio btns -->
+
           <div class="radio-btns mt-3">
-            <h6>Condition of the record</h6>
+            <h4 class="form-text">Condition of the record</h4>
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
@@ -103,7 +111,7 @@
           </div>
         </div>
         <div class="rating mt-3">
-          <h6>Please rate this record</h6>
+          <h4 class="form-text">Please rate this record</h4>
           <b-form-rating v-model="value" variant="warning" class="mb-2">
           </b-form-rating>
         </div>
@@ -124,7 +132,10 @@ export default {
   components: {},
   data() {
     return {
-      text: '',
+      artist: '',
+      album: '',
+      track: '',
+      recordLabel: '',
       selected: null,
       options: [
         { value: null, text: 'Genre' },
@@ -140,6 +151,7 @@ export default {
 </script>
 
 <style scoped>
+
 .form-background {
   position: absolute;
   top: 0;
@@ -152,24 +164,34 @@ export default {
   opacity: 0.8;
 }
 
-.form-control {
-  display: inline-block;
-  margin: auto auto;
-}
-
 .container {
   display: block;
   text-align: center;
   justify-content: center;
-  border-radius: 18px 18px 18px 18px;
-  max-width: 50%;
-  height: 30%;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 40%;
+  padding-top: 5%;
+}
+
+.form-control {
+  display: inline-block;
+  margin: auto auto;
+  background-color: white;
 }
 
 .form-btns {
   margin: 10px 10px;
   padding: 10px 10px;
   display: inline-block;
+}
+
+.form-title {
+  text-align: center;
+  color: rgb(95, 0, 0);
+  padding: 10px 10px
+}
+.form-text {
+  color: black
 }
 
 .cancel {
@@ -181,9 +203,5 @@ export default {
   float: right;
   margin-left: 15px;
 }
-.form-title {
-  text-align: center;
-  color: rgb(95, 0, 0);
-  padding: 10px 10px
-}
+
 </style>
