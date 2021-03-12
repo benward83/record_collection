@@ -9,28 +9,28 @@
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="artist"
+            v-model.trim="artist"
             placeholder="Artist"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="album"
+            v-model.trim="album"
             placeholder="Album name"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="track"
+            v-model.trim="track"
             placeholder="Track name"
           ></b-form-input>
         </div>
         <div class="form-input">
           <b-form-input
             class="mt-2"
-            v-model="recordLabel"
+            v-model.trim="recordLabel"
             placeholder="Record label"
           ></b-form-input>
         </div>
@@ -127,6 +127,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'AddRecordForm',
   components: {},
@@ -147,6 +148,14 @@ export default {
       ],
     };
   },
+  // validations: {
+  //   form: {
+  //     mail: {
+  //       required,
+  //       email,
+  //     },
+  //   },
+  // },
 };
 </script>
 
