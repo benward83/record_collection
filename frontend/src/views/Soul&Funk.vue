@@ -1,17 +1,9 @@
 <template>
   <div id="soul-funk">
     <Navbar />
-    <br>
-    <br>
     <Header />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Allsoulandfunk/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

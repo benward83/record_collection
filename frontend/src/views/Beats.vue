@@ -1,11 +1,7 @@
 <template>
   <div id="beats">
     <Navbar />
-    <br>
-    <br>
     <Jumbotron />
-    <br>
-    <br>
     <Search />
   </div>
 </template>

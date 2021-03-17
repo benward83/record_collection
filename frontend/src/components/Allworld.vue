@@ -1,6 +1,6 @@
 <template>
    <b-container class="card-container">
-      <b-row cols="1" cols-sm="2" cols-md="3" cols-lg="4">
+    <b-row cols="1" cols-sm="2" cols-md="2" cols-lg="3">
         <b-col
           v-for='track in tracks'
           :key=track.id
@@ -38,6 +38,11 @@
 export default {
   name: 'Allworld',
   components: {
+  },
+  data() {
+    return {
+      hover: false,
+    };
   },
   props: ['tracks'],
 };

@@ -1,17 +1,9 @@
 <template>
   <div id="dance">
     <Navbar />
-    <br>
-    <br>
     <Header />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Alldance :tracks="tracks"/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

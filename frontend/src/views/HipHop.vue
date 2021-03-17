@@ -1,17 +1,9 @@
 <template>
   <div id="hiphop">
     <Navbar />
-    <br>
-    <br>
     <Header />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Allhiphop :tracks="tracks"/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

@@ -1,17 +1,9 @@
 <template>
   <div id="home">
     <Navbar />
-    <br>
-    <br>
     <Jumbotron />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Genres />
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

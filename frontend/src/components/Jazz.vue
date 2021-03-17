@@ -56,7 +56,7 @@ export default {
 <style>
 
 .img-fluid {
-  border: 2px solid black;
+  border: 2px solid rgb(95, 0, 0);
 }
 .active:hover {
   transition: transform .5s ease-in;

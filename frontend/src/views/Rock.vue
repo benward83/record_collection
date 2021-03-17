@@ -1,17 +1,9 @@
 <template>
   <div id="rock">
     <Navbar />
-    <br>
-    <br>
     <Header />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Allrock :tracks="tracks"/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

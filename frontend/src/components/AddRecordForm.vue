@@ -110,6 +110,18 @@
             </div>
           </div>
         </div>
+        <!-- Text area -->
+        <div>
+          <b-form-textarea
+            id="textarea"
+            v-model="text"
+            placeholder="Enter something..."
+            rows="3"
+            max-rows="6"
+          ></b-form-textarea>
+
+          <pre class="mt-3 mb-0">{{ text }}</pre>
+        </div>
         <div class="rating mt-3">
           <h4 class="form-text">Please rate this record</h4>
           <b-form-rating v-model="value" variant="warning" class="mb-2">

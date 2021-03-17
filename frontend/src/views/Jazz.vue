@@ -1,17 +1,9 @@
 <template>
   <div id="jazz">
     <Navbar />
-    <br>
-    <br>
     <Header />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Alljazz :tracks="tracks"/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>

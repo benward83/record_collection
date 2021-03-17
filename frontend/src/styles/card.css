@@ -2,17 +2,23 @@
   font-family: 'Ubuntu', sans-serif;
 }
 .card-container {
+  margin: auto;
+  max-width: 80%;
 }
 
-
 .card {
+  text-align: center;
+  font-size: 10px;
   background-color: #fdfdfd;
-  border-color: black;
+  border-width: 2px;
+  border-color: rgb(95, 0, 0);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .active:hover {
-  transition: transform .5s ease-in;
-  transition: transform .5s ease-out;
+  transition: transform .8s ease-in;
+  transition: transform .8s ease-out;
   transform: scale(1.1);
 }
 

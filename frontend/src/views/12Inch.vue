@@ -1,17 +1,9 @@
 <template>
   <div id="twelve-inch">
     <Navbar />
-    <br>
-    <br>
     <Jumbotron />
-    <br>
-    <br>
     <Search />
-    <br>
-    <br>
     <Single12 :tracks="tracks"/>
-    <br>
-    <br>
     <Footer />
   </div>
 </template>
