@@ -17,6 +17,15 @@
       porro possimus, eaque repellendus quod ex eum animi suscipit ad minima,
       qui corrupti rerum nihil? Vero quos repellat aspernatur id.
     </p>
+    <router-link
+      to="/"
+      tag="button"
+      class="form-btns">
+     <b-button
+      class="cancel"
+      variant="danger"
+      > Cancel</b-button>
+    </router-link>
   </div>
 </template>
 
