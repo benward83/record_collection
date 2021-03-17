@@ -4,6 +4,7 @@
     <Jumbotron />
     <Search />
     <Single7 :tracks="tracks"/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Jumbotron from '@/components/Jumbotron.vue';
 import Search from '@/components/Search.vue';
 import Single7 from '@/components/Single7.vue';
 import Footer from '@/components/Footer.vue';
+import Pagination from '@/components/Pagination.vue';
 
 import Bell from '@/assets/images/Soul&Funk/single7/YourLover.jpg';
 import McCrae from '@/assets/images/Soul&Funk/single7/RockYourBaby.jpg';
@@ -33,6 +35,7 @@ export default {
     Jumbotron,
     Search,
     Single7,
+    Pagination,
     Footer,
   },
   data() {

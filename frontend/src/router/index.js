@@ -63,6 +63,11 @@ const routes = [
     name: 'LoginForm',
     component: () => import('../views/LoginForm.vue'),
   },
+  {
+    path: '/record',
+    name: 'Record',
+    component: () => import('../views/Record.vue'),
+  },
 ];
 
 const router = new VueRouter({

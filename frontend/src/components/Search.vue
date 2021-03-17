@@ -4,7 +4,7 @@
       label-cols="4"
       label-cols-lg="2"
       label-for="input-default">
-      <p>What kind of tunes are you looking for?</p>
+      <p>Search for the music you want to check out.</p>
       <b-form-input id="input-default"></b-form-input>
     </b-form-group>
   </div>

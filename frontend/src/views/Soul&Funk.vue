@@ -4,6 +4,7 @@
     <Header />
     <Search />
     <Allsoulandfunk/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Allsoulandfunk from '@/components/Allsoulandfunk.vue';
 import Header from '@/components/Header.vue';
+import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 import Bell from '@/assets/images/Soul&Funk/single7/YourLover.jpg';
@@ -32,6 +34,7 @@ export default {
     Navbar,
     Search,
     Header,
+    Pagination,
     Footer,
     Allsoulandfunk,
   },

@@ -3,23 +3,23 @@
     <Navbar
       v-if="!addRecord"
     />
-    <!-- <LoginModal ref="modal"/> -->
-    <AddRecordForm />
+    <LoginModal ref="modal"/>
+    <!-- <AddRecordForm /> -->
   </div>
 </template>
 
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-// import LoginModal from '@/components/LoginModal.vue';
-import AddRecordForm from '@/components/AddRecordForm.vue';
+import LoginModal from '@/components/LoginModal.vue';
+// import AddRecordForm from '@/components/AddRecordForm.vue';
 
 export default {
   name: 'login-form',
   components: {
     Navbar,
-    // LoginModal,
-    AddRecordForm,
+    LoginModal,
+    // AddRecordForm,
   },
   data() {
     return {

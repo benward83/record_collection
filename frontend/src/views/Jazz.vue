@@ -4,6 +4,7 @@
     <Header />
     <Search />
     <Alljazz :tracks="tracks"/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Alljazz from '@/components/Alljazz.vue';
 import Header from '@/components/Header.vue';
+import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 import Miles from '@/assets/images/Jazz/Miles.jpg';
@@ -30,6 +32,7 @@ export default {
     Search,
     Header,
     Alljazz,
+    Pagination,
     Footer,
   },
   data() {

@@ -4,6 +4,7 @@
     <Header />
     <Search />
     <Allhiphop :tracks="tracks"/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Allhiphop from '@/components/Allhiphop.vue';
 import Header from '@/components/Header.vue';
+import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 import Badseed from '@/assets/images/HipHop/single12/TheKids.jpg';
@@ -32,6 +34,7 @@ export default {
     Navbar,
     Search,
     Header,
+    Pagination,
     Footer,
     Allhiphop,
   },

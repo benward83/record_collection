@@ -2,3 +2,11 @@
   max-width: 50%;
   margin-left: 25%;
 }
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: rgb(95, 0, 0)
+}

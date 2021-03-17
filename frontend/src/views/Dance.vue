@@ -4,6 +4,7 @@
     <Header />
     <Search />
     <Alldance :tracks="tracks"/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Alldance from '@/components/Alldance.vue';
 import Header from '@/components/Header.vue';
+import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 import Aphex from '@/assets/images/Dance/Aphex.jpg';
@@ -29,6 +31,7 @@ export default {
     Navbar,
     Search,
     Header,
+    Pagination,
     Footer,
     Alldance,
   },

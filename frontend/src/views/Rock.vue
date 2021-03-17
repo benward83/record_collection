@@ -4,6 +4,7 @@
     <Header />
     <Search />
     <Allrock :tracks="tracks"/>
+    <Pagination />
     <Footer />
   </div>
 </template>
@@ -14,6 +15,7 @@ import Navbar from '@/components/Navbar.vue';
 import Search from '@/components/Search.vue';
 import Allrock from '@/components/Allrock.vue';
 import Header from '@/components/Header.vue';
+import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
 
 import Fermin from '@/assets/images/Rock/Suicide.jpg';
@@ -31,6 +33,7 @@ export default {
     Search,
     Header,
     Allrock,
+    Pagination,
     Footer,
   },
   data() {
