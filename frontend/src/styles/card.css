@@ -2,8 +2,12 @@
   font-family: 'Ubuntu', sans-serif;
 }
 .card-container {
-  margin: auto;
-  max-width: 80%;
+  margin-top: 5%;
+  max-width: 60%;
+}
+
+.card-body {
+  background-color: whitesmoke;
 }
 
 .card {

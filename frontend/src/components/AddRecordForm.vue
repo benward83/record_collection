@@ -1,6 +1,6 @@
 <template>
   <div class="form-background">
-    <div class="container mt-3">
+    <div class="form-container mt-3">
       <form @submit.prevent="submit" class="form-control" action="submit">
         <h2 class="form-title">Add a record</h2>
 

@@ -31,4 +31,5 @@
   text-align: center;
   color: black;
   word-wrap: break-word;
+  white-space: nowrap;
 }
