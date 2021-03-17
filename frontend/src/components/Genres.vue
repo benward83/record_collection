@@ -1,5 +1,5 @@
 <template>
-  <div id="genres" class="container">
+  <div id="genres" class="genre-container">
     <div class="row">
       <div class="col order-last">
         <Rock />
@@ -49,15 +49,3 @@ export default {
 
 };
 </script>
-
-<style scoped>
-.container-fluid {
-  max-width: 300px;
-
-}
-
-.img-fluid {
-  border-block-color: black;
-}
-
-</style>
