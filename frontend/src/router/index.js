@@ -7,7 +7,7 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home,
   },
   {
@@ -25,47 +25,47 @@ const routes = [
   },
   {
     path: '/beats',
-    name: 'Beats',
+    name: 'beats',
     component: () => import('../views/Beats.vue'),
   },
   {
     path: '/hiphop',
-    name: 'HipHop',
+    name: 'hiphop',
     component: () => import('../views/HipHop.vue'),
   },
   {
     path: '/jazz',
-    name: 'Jazz',
+    name: 'jazz',
     component: () => import('../views/Jazz.vue'),
   },
   {
     path: '/rock',
-    name: 'Rock',
+    name: 'rock',
     component: () => import('../views/Rock.vue'),
   },
   {
-    path: '/soul&funk',
-    name: 'Soul&Funk',
+    path: '/soulandfunk',
+    name: 'soulandfunk',
     component: () => import('../views/Soul&Funk.vue'),
   },
   {
     path: '/dance',
-    name: 'Dance',
+    name: 'dance',
     component: () => import('../views/Dance.vue'),
   },
   {
     path: '/world',
-    name: 'World',
+    name: 'world',
     component: () => import('../views/World.vue'),
   },
   {
-    path: '/loginform',
-    name: 'LoginForm',
+    path: '/login',
+    name: 'login',
     component: () => import('../views/LoginForm.vue'),
   },
   {
     path: '/record',
-    name: 'Record',
+    name: 'record',
     component: () => import('../views/Record.vue'),
   },
 ];
