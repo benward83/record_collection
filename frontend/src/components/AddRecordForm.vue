@@ -2,7 +2,7 @@
   <div>
     <div class="form-background">
         <div class="form-container mt-3">
-          <form @submit.prevent="submit" class="form-control" action="submit">
+          <form @submit.prevent="onSubmit" class="form-control" action="submit">
             <h2 class="form-title">Add a record</h2>
 
             <!-- inputs -->
@@ -111,7 +111,9 @@
                 </div>
               </div>
             </div>
+
             <!-- Text area -->
+
             <div>
               <b-form-textarea
                 id="textarea"
@@ -120,19 +122,30 @@
                 rows="3"
                 max-rows="6"
               ></b-form-textarea>
-
-              <pre class="mt-3 mb-0">{{ text }}</pre>
             </div>
+
+                  <!-- Add image -->
+
+            <div id="imageUpload">
+              <b-form-file
+                v-model="imageFile"
+                accept="image/jpeg, image/png, image/gif"
+                :state="Boolean(imageFile)"
+                placeholder="Upload an image for the record..."
+              >
+              </b-form-file>
+            </div>
+
             <div class="rating mt-3">
               <h4 class="form-text">Please rate this record</h4>
-              <b-form-rating v-model="value" variant="warning" class="mb-2">
+              <b-form-rating v-model="rating" variant="warning" class="mb-2">
               </b-form-rating>
             </div>
             <div class="form-btns mt-3">
               <b-button @click="$router.push('/')" class="cancel" variant="danger"
                 >Cancel</b-button
               >
-              <b-button class="submit" variant="success">Submit</b-button>
+              <b-button type="submit" variant="success">Submit</b-button>
             </div>
           </form>
         </div>
@@ -141,6 +154,8 @@
 </template>
 
 <script>
+
+import axios from 'axios';
 
 export default {
   name: 'AddRecordForm',
@@ -152,25 +167,46 @@ export default {
       track: '',
       recordLabel: '',
       description: '',
+      imageFile: null,
+      rating: null,
       selected: null,
       options: [
         { value: null, text: 'Genre' },
-        { value: 'a', text: 'Soul & Funk' },
-        { value: 'b', text: 'Dance' },
-        { value: 'a', text: 'Rock' },
-        { value: 'b', text: 'World' },
-        { value: 'a', text: 'Jazz' },
+        { value: 'Soul & Funk', text: 'Soul & Funk' },
+        { value: 'Hip Hop', text: 'Hip Hop' },
+        { value: 'Dance', text: 'Dance' },
+        { value: 'Rock', text: 'Rock' },
+        { value: 'World', text: 'World' },
+        { value: 'Jazz', text: 'Jazz' },
       ],
     };
   },
-  // validations: {
-  //   form: {
-  //     mail: {
-  //       required,
-  //       email,
-  //     },
-  //   },
-  // },
+  methods: {
+    onSubmit() {
+      const newRecord = {
+        artist: this.artist,
+        album: this.album,
+        track: this.track,
+        recordLabel: this.recordLabel,
+        description: this.description,
+        imageFile: this.imageFile,
+        rating: this.rating,
+        selected: this.selected,
+      };
+      axios.post();
+      console.log(newRecord);
+      this.clearForm();
+    },
+    clearForm() {
+      this.artist = '';
+      this.album = '';
+      this.track = '';
+      this.recordLabel = '';
+      this.imageFile = null;
+      this.rating = null;
+      this.selected = null;
+    },
+  },
 };
 </script>
 
