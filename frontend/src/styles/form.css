@@ -34,6 +34,21 @@
   display: inline-block;
 }
 
+#imageUpload {
+  margin-left: 25%;
+  max-width: 25%;
+}
+
+#image-file-btn {
+  color:rgb(95, 0, 0)
+}
+
+.record-types-btns {
+  color: black;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
 .form-title {
   text-align: center;
   color: rgb(95, 0, 0);
@@ -58,9 +73,6 @@
   margin-bottom: 2%;
 }
 
-.record-types-btns {
-  color: black;
-  margin: 10px 10px;
-  padding: 10px 10px;
-}
+
+
 

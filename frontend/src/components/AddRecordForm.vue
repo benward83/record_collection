@@ -44,14 +44,14 @@
             ></b-form-input>
           </div>
 
-            <!-- Radio buttons for record size/type-->
+          <!-- Radio buttons for record size/type-->
 
           <div class="record-types-btns">
             <h6>Select record type & size</h6>
             <b-form-group>
               <b-form-radio-group
                 v-model="recordSize"
-                :options="choicesSize"
+                :options="optionsSize"
                 name="plain-inline"
                 plain
               ></b-form-radio-group>
@@ -59,7 +59,7 @@
             <b-form-group>
               <b-form-radio-group
                 v-model="recordType"
-                :options="choicesType"
+                :options="optionsType"
                 name="Record size"
                 plain
               ></b-form-radio-group>
@@ -69,7 +69,8 @@
           <!-- dropdown -->
 
           <div class="form-dropdown mt-3">
-            <b-form-select v-model="genre" :options="options"> </b-form-select>
+            <b-form-select v-model="genre" :options="optionsGenre">
+            </b-form-select>
 
             <!-- radio btns -->
 
@@ -152,18 +153,25 @@
 
           <!-- Add image -->
 
+          <h4 class="form-text">Add record artwork</h4>
           <div id="imageUpload">
             <b-form-file
               v-model="imageFile"
               accept="image/jpeg, image/png, image/gif"
-              :state="Boolean(imageFile)"
-              placeholder="Upload an image for the record..."
+              id="image-file-btn"
+              plain
             >
             </b-form-file>
+            <!-- <b-form-file
+              v-model="imageFile"
+              accept="image/jpeg, image/png, image/gif"
+              :state="Boolean(imageFile)"
+            >
+            </b-form-file> -->
           </div>
 
           <div class="rating mt-3">
-            <h4 class="form-text">Please rate this record</h4>
+            <h4 class="form-text">Rate this record</h4>
             <b-form-rating v-model="rating" variant="warning" class="mb-2">
             </b-form-rating>
           </div>
@@ -196,18 +204,18 @@ export default {
       imageFile: null,
       rating: null,
       recordSize: null,
-      choicesSize: [
+      optionsType: [
         { text: 'LP', value: 'LP' },
         { text: 'EP', value: 'EP' },
         { text: 'Single', value: 'Single' },
       ],
       recordType: null,
-      choicesType: [
-        { text: '12 Inch', value: '12' },
-        { text: '7 Inch', value: '7' },
+      optionsSize: [
+        { text: '12 Inch', value: '12-inch' },
+        { text: '7 Inch', value: '7-inch' },
       ],
       genre: null,
-      options: [
+      optionsGenre: [
         { value: null, text: 'Genre' },
         { value: 'Soul & Funk', text: 'Soul & Funk' },
         { value: 'Hip Hop', text: 'Hip Hop' },
