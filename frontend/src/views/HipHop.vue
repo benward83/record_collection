@@ -2,7 +2,6 @@
   <div id="hiphop">
     <Navbar />
     <Header />
-    <Search />
     <Allhiphop :tracks="tracks"/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Allhiphop from '@/components/Allhiphop.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -32,7 +30,6 @@ export default {
   name: 'hiphop',
   components: {
     Navbar,
-    Search,
     Header,
     Pagination,
     Footer,

@@ -2,7 +2,6 @@
   <div id="beats">
     <Navbar />
     <Jumbotron />
-    <Search />
   </div>
 </template>
 
@@ -10,15 +9,12 @@
 
 import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
-import Search from '@/components/Search.vue';
 
 export default {
   name: 'beats',
   components: {
     Navbar,
     Jumbotron,
-    Search,
-
   },
 
 };

@@ -1,16 +1,16 @@
 ---
 name: |-
-  Creates an Artist
+  Creates a Vinyl
 
 url: |-
-  /artists/
+  /vinyls/
 
 services:
 - method: |-
     POST
 
   description: |-
-    Creates a new artist
+    Creates a new vinyl
 
   input_schema: |-
     {
@@ -18,7 +18,7 @@ services:
     }
 
   output_schema: |-
-    Artist
+    Vinyl
 
   error_schema: |-
     Error
@@ -28,7 +28,7 @@ services:
     - description: |-
         when requested
       params:
-        name: Dj Shadow
+        name: Entroducing
       expected:
         content_type: application/json
         status: 200

@@ -182,7 +182,7 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
   name: 'AddRecordForm',
@@ -233,7 +233,12 @@ export default {
         rating: this.rating,
         genre: this.genre,
       };
-      console.log(newRecord);
+      axios.post('/api/vinyls', newRecord)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log('error', err));
+      // this.clearForm();
     },
     clearForm() {
       this.artist = '';

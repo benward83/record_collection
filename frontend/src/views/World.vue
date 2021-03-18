@@ -2,7 +2,6 @@
   <div id="soul-funk">
     <Navbar />
     <Header />
-    <Search />
     <Allworld :tracks="tracks"/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Allworld from '@/components/Allworld.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -30,7 +28,6 @@ export default {
   name: 'world',
   components: {
     Navbar,
-    Search,
     Header,
     Pagination,
     Footer,

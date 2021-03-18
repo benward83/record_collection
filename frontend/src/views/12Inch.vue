@@ -2,7 +2,6 @@
   <div id="twelve-inch">
     <Navbar />
     <Jumbotron />
-    <Search />
     <Single12 :tracks="tracks"/>
      <Pagination />
     <Footer />
@@ -13,7 +12,6 @@
 
 import Navbar from '@/components/Navbar.vue';
 import Jumbotron from '@/components/Jumbotron.vue';
-import Search from '@/components/Search.vue';
 import Single12 from '@/components/Single12.vue';
 import Pagination from '@/components/Pagination.vue';
 import Footer from '@/components/Footer.vue';
@@ -33,7 +31,6 @@ export default {
   components: {
     Navbar,
     Jumbotron,
-    Search,
     Single12,
     Pagination,
     Footer,

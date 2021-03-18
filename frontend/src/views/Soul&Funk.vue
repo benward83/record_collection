@@ -2,7 +2,6 @@
   <div id="soul-funk">
     <Navbar />
     <Header />
-    <Search />
     <Allsoulandfunk/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Allsoulandfunk from '@/components/Allsoulandfunk.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -32,7 +30,6 @@ export default {
   name: 'soul&funk',
   components: {
     Navbar,
-    Search,
     Header,
     Pagination,
     Footer,

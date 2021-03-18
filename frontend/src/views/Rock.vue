@@ -2,7 +2,6 @@
   <div id="rock">
     <Navbar />
     <Header />
-    <Search />
     <Allrock :tracks="tracks"/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Allrock from '@/components/Allrock.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -30,7 +28,6 @@ export default {
   name: 'rock',
   components: {
     Navbar,
-    Search,
     Header,
     Allrock,
     Pagination,

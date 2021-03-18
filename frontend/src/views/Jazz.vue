@@ -2,7 +2,6 @@
   <div id="jazz">
     <Navbar />
     <Header />
-    <Search />
     <Alljazz :tracks="tracks"/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Alljazz from '@/components/Alljazz.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -29,7 +27,6 @@ export default {
   name: 'jazz',
   components: {
     Navbar,
-    Search,
     Header,
     Alljazz,
     Pagination,

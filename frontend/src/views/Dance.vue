@@ -2,7 +2,6 @@
   <div id="dance">
     <Navbar />
     <Header />
-    <Search />
     <Alldance :tracks="tracks"/>
     <Pagination />
     <Footer />
@@ -12,7 +11,6 @@
 <script>
 
 import Navbar from '@/components/Navbar.vue';
-import Search from '@/components/Search.vue';
 import Alldance from '@/components/Alldance.vue';
 import Header from '@/components/Header.vue';
 import Pagination from '@/components/Pagination.vue';
@@ -29,7 +27,6 @@ export default {
   name: 'dance',
   components: {
     Navbar,
-    Search,
     Header,
     Pagination,
     Footer,
