@@ -3,7 +3,7 @@
     <div class="form-background">
       <div class="form-container mt-3">
         <form @submit.prevent="onSubmit" class="form-control" action="submit">
-          <h2 class="form-title">Add a record</h2>
+          <h2 class="form-title">Add a record to the collection</h2>
 
           <!-- inputs -->
 
@@ -45,9 +45,9 @@
           </div>
 
             <!-- dropdown -->
-
+          <h3 class="form-text">Select genres</h3>
           <div class="form-dropdown mt-3">
-            <b-form-select v-model="genre" :options="optionsGenre">
+            <b-form-select v-model="genre" :options="optionsGenre" multiple>
             </b-form-select>
           </div>
 
@@ -208,9 +208,8 @@ export default {
         { text: '12 Inch', value: '12-inch' },
         { text: '7 Inch', value: '7-inch' },
       ],
-      genre: null,
+      genre: [],
       optionsGenre: [
-        { value: null, text: 'Genre' },
         { value: 'Soul & Funk', text: 'Soul & Funk' },
         { value: 'Hip Hop', text: 'Hip Hop' },
         { value: 'Dance', text: 'Dance' },
@@ -247,7 +246,7 @@ export default {
       this.recordSize = null;
       this.imageFile = null;
       this.rating = null;
-      this.genre = null;
+      this.genre = [];
     },
   },
 };
