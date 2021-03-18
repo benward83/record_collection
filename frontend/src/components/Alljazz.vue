@@ -16,9 +16,6 @@
             :title="track.title"
             :sub-title="track.subtitle"
             :key="track.id"
-            @mouseover="hover = true"
-            @mouseleave="hover = false"
-            :class="{active: hover}"
           >
             <b-card-img
                 :src="track.img"
