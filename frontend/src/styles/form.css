@@ -58,6 +58,9 @@
   margin-bottom: 2%;
 }
 
-#imageUpload {
-
+.record-types-btns {
+  color: black;
+  margin: 10px 10px;
+  padding: 10px 10px;
 }
+
