@@ -44,10 +44,17 @@
             ></b-form-input>
           </div>
 
+            <!-- dropdown -->
+
+          <div class="form-dropdown mt-3">
+            <b-form-select v-model="genre" :options="optionsGenre">
+            </b-form-select>
+          </div>
+
           <!-- Radio buttons for record size/type-->
 
           <div class="record-types-btns">
-            <h6>Select record type & size</h6>
+            <h3 class="form-text">Select record type & size</h3>
             <b-form-group>
               <b-form-radio-group
                 v-model="recordSize"
@@ -66,16 +73,10 @@
             </b-form-group>
           </div>
 
-          <!-- dropdown -->
-
-          <div class="form-dropdown mt-3">
-            <b-form-select v-model="genre" :options="optionsGenre">
-            </b-form-select>
-
             <!-- radio btns -->
 
             <div class="radio-btns mt-3">
-              <h4 class="form-text">Condition of the record</h4>
+              <h3 class="form-text">Condition of the record</h3>
               <div class="form-check form-check-inline">
                 <input
                   class="form-check-input"
@@ -137,7 +138,6 @@
                 <label class="form-check-label" for="inlineRadio6">P</label>
               </div>
             </div>
-          </div>
 
           <!-- Text area -->
 
@@ -153,25 +153,19 @@
 
           <!-- Add image -->
 
-          <h4 class="form-text">Add record artwork</h4>
+          <h3 class="form-text">Add record artwork</h3>
           <div id="imageUpload">
-            <b-form-file
-              v-model="imageFile"
-              accept="image/jpeg, image/png, image/gif"
-              id="image-file-btn"
-              plain
-            >
-            </b-form-file>
-            <!-- <b-form-file
-              v-model="imageFile"
-              accept="image/jpeg, image/png, image/gif"
-              :state="Boolean(imageFile)"
-            >
-            </b-form-file> -->
+              <b-form-file
+                v-model="imageFile"
+                accept="image/jpeg, image/png, image/gif"
+                id="image-file-btn"
+                plain
+              >
+              </b-form-file>
           </div>
 
           <div class="rating mt-3">
-            <h4 class="form-text">Rate this record</h4>
+            <h3 class="form-text">Rate this record</h3>
             <b-form-rating v-model="rating" variant="warning" class="mb-2">
             </b-form-rating>
           </div>
@@ -251,6 +245,7 @@ export default {
       this.imageFile = null;
       this.recordType = null;
       this.recordSize = null;
+      this.imageFile = null;
       this.rating = null;
       this.genre = null;
     },
