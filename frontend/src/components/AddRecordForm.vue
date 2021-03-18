@@ -12,6 +12,7 @@
                 class="mt-2"
                 v-model.trim="artist"
                 placeholder="Artist"
+                autofocus="autofocus"
               ></b-form-input>
             </div>
             <div class="form-input">
@@ -155,7 +156,7 @@
 
 <script>
 
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'AddRecordForm',
@@ -193,9 +194,7 @@ export default {
         rating: this.rating,
         selected: this.selected,
       };
-      axios.post();
       console.log(newRecord);
-      this.clearForm();
     },
     clearForm() {
       this.artist = '';
