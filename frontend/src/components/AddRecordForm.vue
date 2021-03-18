@@ -237,7 +237,7 @@ export default {
         .then((res) => {
           console.log(res);
         })
-        .catch((err) => console.log('error', err));
+        .catch((err) => console.log('error', err.response.data));
       // this.clearForm();
     },
     clearForm() {
