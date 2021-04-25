@@ -46,6 +46,15 @@ export default {
     HipHop,
     SoulFunk,
   },
+  props: {
+    music: {
+      type: Array,
+      default: null,
+    },
+    created() {
+      console.log(this.music);
+    },
+  },
 
 };
 </script>

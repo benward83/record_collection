@@ -11,7 +11,7 @@
           <p>Rock</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/Rock/American.jpg"
+              src="../assets/images/Rock/Encore.jpg"
               alt=""
               class="img-fluid"
             >

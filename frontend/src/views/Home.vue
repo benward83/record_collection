@@ -3,7 +3,7 @@
     <Navbar />
     <Jumbotron />
     <Search />
-    <Genres />
+    <Genres :music="music"/>
     <Footer />
   </div>
 </template>
@@ -19,7 +19,7 @@ import Footer from '@/components/Footer.vue';
 // Rock
 import Sticky from '@/assets/images/Rock/Sticky.jpg';
 import Beatles from '@/assets/images/Rock/Beatles.jpg';
-import American from '@/assets/images/Rock/American.jpg';
+import Encore from '@/assets/images/Rock/Encore.jpg';
 import Desire from '@/assets/images/Rock/Desire.jpg';
 
 // World
@@ -66,9 +66,9 @@ export default {
       {
         label: 'rock',
         id: 1,
-        title: 'American Beauty',
-        artist: 'Grateful Dead',
-        img: American,
+        title: 'Encore',
+        artist: 'Tangerine Dream',
+        img: Encore,
       },
       {
         label: 'rock',
@@ -154,7 +154,7 @@ export default {
         label: 'jazz',
         id: 1,
         title: 'Miles Davis',
-        artist: 'Miles Dav§is',
+        artist: 'Miles Davis',
         img: Miles,
       },
       {
@@ -167,8 +167,8 @@ export default {
       {
         label: 'jazz',
         id: 3,
-        title: 'Grover Washongton',
-        artist: 'Grover Washongton',
+        title: 'Grover Washington',
+        artist: 'Grover Washington',
         img: Grover,
       },
       {
@@ -203,7 +203,7 @@ export default {
       {
         label: 'hiphop',
         id: 4,
-        title: 'Entriducing',
+        title: 'Entroducing',
         artist: 'Dj Shadow',
         img: Entroducing,
       },
@@ -232,7 +232,7 @@ export default {
       {
         label: 'hiphop',
         id: 4,
-        title: 'Stylistocs',
+        title: 'Stylistics',
         artist: 'Stylistics',
         img: Stylistics,
       },
