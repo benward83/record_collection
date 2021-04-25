@@ -17,7 +17,7 @@
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Soul&Funk/Blue-Benson.jpg"
+              src="../assets/images/Soul&Funk/Benson.jpg"
               alt=""
               class="img-fluid"
             >

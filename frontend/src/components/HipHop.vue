@@ -26,7 +26,7 @@
         <div class="row align-items-center content">
           <div class="col-md-6">
             <img
-              src="../assets/images/HipHop/Black_on_both_sides.jpg"
+              src="../assets/images/HipHop/MosDef.jpg"
               alt=""
               class="img-fluid"
             >

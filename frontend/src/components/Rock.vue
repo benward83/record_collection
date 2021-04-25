@@ -11,7 +11,7 @@
           <p>Rock</p>
           <div class="col-md-6">
             <img
-              src="../assets/images/Rock/American-Beauty.jpg"
+              src="../assets/images/Rock/American.jpg"
               alt=""
               class="img-fluid"
             >
@@ -34,7 +34,7 @@
           </div>
           <div class="col-md-6">
             <img
-              src="../assets/images/Rock/Sticky-Fingers.jpg"
+              src="../assets/images/Rock/Sticky.jpg"
               alt=""
               class="img-fluid"
             >
