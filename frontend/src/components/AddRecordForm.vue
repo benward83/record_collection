@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="form-background">
-      <div class="form-container mt-3">
+      <div class="form-container">
         <form @submit.prevent="onSubmit" class="form-control" action="submit">
           <h2 class="form-title">Add a record to the collection</h2>
 
@@ -182,7 +182,7 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 
 export default {
   name: 'AddRecordForm',
@@ -220,26 +220,26 @@ export default {
     };
   },
   methods: {
-    // onSubmit() {
-    //   const newRecord = {
-    //     artist: this.artist,
-    //     album: this.album,
-    //     track: this.track,
-    //     recordLabel: this.recordLabel,
-    //     description: this.description,
-    //     recordType: this.recordType,
-    //     recordSize: this.recordSize,
-    //     imageFile: this.imageFile,
-    //     rating: this.rating,
-    //     genre: this.genre,
-    //   };
-    //   // axios.post('/api/vinyls', newRecord)
-    //   //   .then((res) => {
-    //   //     console.log(res);
-    //   //   })
-    //   //   .catch((err) => console.log('error', err.response.data));
-    //   // // this.clearForm();
-    // },
+    onSubmit() {
+      const newRecord = {
+        artist: this.artist,
+        album: this.album,
+        track: this.track,
+        recordLabel: this.recordLabel,
+        description: this.description,
+        recordType: this.recordType,
+        recordSize: this.recordSize,
+        imageFile: this.imageFile,
+        rating: this.rating,
+        genre: this.genre,
+      };
+      axios.post('/vinyls', newRecord)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log('error', err.response.data));
+      this.clearForm();
+    },
     clearForm() {
       this.artist = '';
       this.album = '';

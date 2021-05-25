@@ -53,6 +53,12 @@ export default {
       hover: false,
     };
   },
+  props: {
+    music: {
+      type: Array,
+      default: null,
+    },
+  },
 };
 </script>
 

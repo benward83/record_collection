@@ -2,26 +2,26 @@
   <div id="genres" class="genre-container">
     <div class="row">
       <div class="col order-last">
-        <Rock />
+        <Rock :music="music"/>
         <br>
       </div>
       <div class="col">
-        <HipHop />
+        <HipHop :music="music"/>
       </div>
       <div class="col order-first">
-        <Jazz />
+        <Jazz :music="music"/>
       </div>
     </div>
     <div class="row">
       <div class="col order-last">
-        <World />
+        <World :music="music"/>
       </div>
       <div class="col">
-        <Dance />
+        <Dance :music="music"/>
       </div>
       <br>
       <div class="col order-first">
-        <SoulFunk />
+        <SoulFunk :music="music"/>
       </div>
     </div>
   </div>

@@ -35,10 +35,3 @@ export default {
 
 };
 </script>
-
-<style>
-#form {
-  background-color: whitesmoke;
-  margin-top: 10px;
-}
-</style>
